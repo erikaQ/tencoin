@@ -1,22 +1,26 @@
-$icomoon-font-family: "tencoin" !default;
+$icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "../fonts" !default;
 
-$icon-arrow: "\e900";
-$icon-calendar: "\e901";
-$icon-dropdown: "\e902";
-$icon-eye: "\e903";
+$icon-soc3: "\e90a";
+$icon-calendar: "\e900";
+$icon-dropdown: "\e901";
+$icon-eye: "\e902";
+$icon-arrow: "\e903";
 $icon-house: "\e904";
 $icon-slide_next: "\e905";
 $icon-slide_prev: "\e906";
-$icon-diamonds: "\e919";
+$icon-soc1: "\e907";
+$icon-soc2: "\e908";
+$icon-soc4: "\e909";
+
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?nrflhb');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?nrflhb#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?nrflhb') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?nrflhb') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?nrflhb##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ljz6tr');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ljz6tr#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ljz6tr') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ljz6tr') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ljz6tr##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,19 +40,14 @@ $icon-diamonds: "\e919";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon {
-  margin-right: 0.2em;
-  color: #b2b2b2;
-  font-size: 1.3em;
-  // line-height: 1em;
-}
-
-.icon-arrow {
+.icon-soc3 {
+  color: #50ABF5;
   &:before {
-    content: $icon-arrow; 
+    content: $icon-soc3; 
   }
 }
 .icon-calendar {
+  font-size: 1.4em;
   &:before {
     content: $icon-calendar; 
   }
@@ -60,10 +59,15 @@ $icon-diamonds: "\e919";
 }
 .icon-eye {
   position: relative;
-  top: -0.05em;
-  font-size: 1.7em;
+  margin-right: 0.4em;
+  font-size: 1.4em;
   &:before {
     content: $icon-eye; 
+  }
+}
+.icon-arrow {
+  &:before {
+    content: $icon-arrow; 
   }
 }
 .icon-house {
@@ -81,8 +85,28 @@ $icon-diamonds: "\e919";
     content: $icon-slide_prev; 
   }
 }
-.icon-diamonds {
+.icon-soc1 {
+  color: #000;
   &:before {
-    content: $icon-diamonds; 
+    content: $icon-soc1; 
   }
 }
+.icon-soc2 {
+  color: #3A559F;
+  &:before {
+    content: $icon-soc2; 
+  }
+}
+.icon-soc4 {
+  color: #C536AC;
+  &:before {
+    content: $icon-soc4; 
+  }
+}
+
+// .icon-soc1,
+// .icon-soc2,
+// .icon-soc3,
+// .icon-soc4 {
+//   font-size: 1.7em;
+// }

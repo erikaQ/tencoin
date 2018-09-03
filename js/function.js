@@ -135,7 +135,15 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+        ]
     });
     $('.js-slider__prev').on('click', function() {
         $('.js-slider__home').slick('slickPrev');

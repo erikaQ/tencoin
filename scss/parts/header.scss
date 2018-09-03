@@ -5,12 +5,14 @@
 	@extend %clear_a;
 	@media (max-width : 767px) {
 		padding: 1em 0;
+		margin: 0 -1.5em;
 	}
 	&__logo {
 		float: left;
 		width: 12em;
 		@media (max-width : 767px) {
 			padding-top: 0.3em;
+			margin-left: 1.5em;
 		}
 	}
 	&__right {
@@ -19,6 +21,7 @@
 		@extend %clear_a;
 			@media (max-width : 767px) {
 				display: none;
+				float: none;
 			}
 	}
 	&__dropdown {
@@ -42,17 +45,33 @@
 	padding: 0;
 	overflow: hidden;
 	text-align: right;
+	@media (max-width : 767px) {
+		float: none;
+		text-align: left;
+	}
 	&__item {
 		padding: 0 1.25em;
 		display: inline-block;
 		@media (max-width : 992px) {
 			padding: 0 1em;
 		}
+		@media (max-width : 767px) {
+			padding: 0;
+			display: block;
+		}
 	}
 	&__link {
 		color: #666666;
 		font-size: 1em;
 		font-weight: 500;
+		@media (max-width : 767px) {
+			padding: 0.5em 1.5em;
+			display: block;
+			&:hover {
+				text-decoration: none;
+				background-color: #eee;
+			}
+		}
 	}
 	&__toggle {
 		position: absolute;
@@ -62,6 +81,7 @@
 		height: 2.5em;
 		padding: 0.2em 0;
 		@media (max-width : 767px) {
+			right: 1.5em;
 			display: block;
 		}
 		&_wrap {
@@ -98,6 +118,9 @@
 	font-size: 1em;
 	@media (max-width : 992px) {
 		margin-left: 3em;
+	}
+	@media (max-width : 767px) {
+		margin-left: 1.5em;
 	}
 	&__toggle {
 		color: #666;

@@ -5,7 +5,13 @@ header.header
 		a.header__logo(href="/")
 			img(src="img/logo.svg")
 
-		// begin navbar 
+		// begin navbar
+		.navbar__toggle_wrap.js__navbar-toggle
+			a.navbar__toggle(href="#navbar")
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+
 		.header__right#navbar.js-navbar
 			ul.navbar
 				li.navbar__item
@@ -27,12 +33,6 @@ header.header
 				.dropdown__menu
 					a.dropdown__menu_item.active(href="#") En
 					a.dropdown__menu_item(href="#") Ru
-
-		.navbar__toggle_wrap.js__navbar-toggle
-			a.navbar__toggle(href="#navbar")
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
 		// end navbar 
 
 // end header 

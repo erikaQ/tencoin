@@ -6,6 +6,11 @@
 		padding: 3.15em 0;
 		width: 24%;
 		float: left;
+		@media (max-width: 767px) {
+			padding: 1.5em 0;
+			width: 100%;
+			float: none;
+		}
 	}
 	&__logo {
 		width: 6.7em;
@@ -19,6 +24,9 @@
 		padding: 3.4em 0;
 		overflow: hidden;
 		@extend %clear_all;
+		@media (max-width: 767px) {
+			padding: 1em 0 2em;
+		}
 	}
 	&__copyright {
 		float: left;

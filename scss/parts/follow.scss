@@ -3,11 +3,20 @@
 .follow {
 	padding: 1.3em 0 6.5em;
 	@extend %clear_a;
+	@media (max-width: 1023px) {
+		padding-bottom: 6em;
+	}
+	@media (max-width : 991px) {
+		padding-bottom: 4em;
+	}
 	&__p {
 		margin: 0;
 		float: left;
 		font-size: 1.3em;
-		line-height: 1.55em;
+		line-height: 1.3em;
+		@media (max-width : 1023px) {
+			line-height: 2.4em;
+		}
 	}
 	&__soc {
 		float: left;
@@ -20,11 +29,17 @@
 			margin-left: 1.1em;
 		}
 		&_link {
-			width: 1.7em;
-			height: 1.7em;
 			display: block;
+			text-decoration: none;
 			&:hover {
+				text-decoration: none;
 				opacity: 0.8;
+			}
+		}
+		&_icon {
+			font-size: 1.7em;
+			@media (max-width : 1023px) {
+				font-size: 3.2em;
 			}
 		}
 	}

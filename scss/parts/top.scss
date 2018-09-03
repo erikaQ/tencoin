@@ -41,10 +41,22 @@
 		font-weight: 900;
 		text-transform: uppercase;
 		display: inline-block;
+		@media (max-width: 991px) {
+			font-size: 5.25em;
+		}
+		@media (max-width: 767px) {
+			font-size: 2em !important;
+		}
 	}
 	&__sub {
 		font-size: 2.8em;
 		font-weight: 300;
+		@media (max-width: 991px) {
+			font-size: 2.4em;
+		}
+		@media (max-width: 767px) {
+			font-size: 1.6em;
+		}
 		&_link {
 			padding: 0.2em 0.5em;
 			margin-left: 0.6em;
