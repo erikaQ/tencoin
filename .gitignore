@@ -1,2 +1,6 @@
 /prepros-6.config
 .idea
+bower_components/
+.git/
+.gitignore
+Prepros Export/

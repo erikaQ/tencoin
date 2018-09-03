@@ -1,9 +1,9 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family:								"Open Sans";
-$main_color:									#000;
-$main_line_height:								1.2;
-$main_font_size:								16px;
+$main_font_family:					        "Roboto";
+$main_color:								#666;
+$main_line_height:							1.2;
+$main_font_size:							1em;
 
 $container_width:								100%;
 
@@ -15,11 +15,11 @@ $color_success:									#36a566;
 $color_info:									#03a9f4;
 $color_warning:									#fca33e;
 $color_danger:									#ff1a1a;
-$color_withe:									#ffffff;
+$color_white:									#ffffff;
 
 $green:											$color_success;
 $yellow:										$color_warning;
-$withe:											$color_withe;
+$white:											$color_white;
 
 $el-colors: (
 	primary: $color_primary, // color for .element__primary
@@ -72,7 +72,7 @@ $input_error_placeholder_color:					red;
 // Button variables
 $btn_default_bg_color:				 			#ddd;
 $btn_default_text_color:                        $main_color;
-$btn_contrast_text_color:                       $color_withe;
+$btn_contrast_text_color:                       $color_white;
 $btn_default_bg_color_hover:					#ccc;
 
 
@@ -87,7 +87,3 @@ $breakpoint-mini-max:                            ($breakpoint-small - 1) !defaul
 $breakpoint-small-max:                           ($breakpoint-medium - 1) !default;
 $breakpoint-medium-max:                          ($breakpoint-large - 1) !default;
 $breakpoint-large-max:                           ($breakpoint-xlarge - 1) !default;
-
-
-
-

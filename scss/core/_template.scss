@@ -16,13 +16,17 @@
 
 .container_center {
 	max-width: $container_width;
-	padding: 0 15px;
+	padding: 0 7em;
 	margin-left: auto;
 	margin-right: auto;
+	@media (max-width : 1366px) {
+		padding: 0 3.5em;
+	}
+	@media (max-width : 768px) {
+		padding: 0 1.5em;
+	}
 }
 
-.column {
-	@include columns(4, 20px, 300px);
-}
-
-
+// .column {
+// 	@include columns(4, 20px, 300px);
+// }

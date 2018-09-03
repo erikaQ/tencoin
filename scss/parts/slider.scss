@@ -1,0 +1,133 @@
+/* Slider
+-------------------------------------------------------------------------------*/
+.slider {
+	&__bg {
+		margin-bottom: 7em;
+		padding: 5.8em 7em 3.5em;
+		background-color: #f9f9f9;
+		@media (max-width : 1366px) {
+			padding: 5.8em 3.5em 3.5em;
+		}
+		@media (max-width : 768px) {
+			padding: 5.8em 1.5em 3.5em;
+		}
+	}
+	&__news {
+		margin-bottom: 5.5em;
+	}
+	&:after {
+		content: '';
+		clear: both;
+	}
+	&__left {
+		width: 24%;
+		float: left;
+		padding-right: 5%;
+	}
+	&__right {
+		overflow: hidden;
+	}
+	&__h2 {
+		margin-bottom: 0.45em;
+	}
+	&__arrows {
+		margin-top: 5.5em;
+	}
+	&__arrow {
+		color: #b2b2b2;
+		font-size: 2.4em;
+		float: left;
+		display: block;
+		text-decoration: none;
+		&:nth-child(2) {
+			margin-left: 0.3em;
+		}
+		&:hover {
+			opacity: 0.7;
+			text-decoration: none;
+		}
+	}
+	&__home {
+		// width: auto;
+		margin-left: -1em;
+		&_wrap {
+			width: 100%;
+		}
+		&_item {
+			display: block;
+			padding-left: 1em;
+			text-decoration: none;
+			&:focus {
+				outline: 0;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&_img {
+			width: 100%;
+			height: auto;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		&_h {
+			padding: 1em 0;
+			color: #000;
+			font-size: 1.35em;
+			font-weight: 700;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__news {
+		&_info {
+			margin-top: 1.15em;
+			font-size: 0.75em;
+			font-weight: 400;
+			overflow: hidden;
+			&:after {
+				content: '';
+				clear: both;
+			}
+			&_date {
+				float: left;
+				margin-right: 1em;
+			}
+			&_eye {
+				float: left;
+			}
+			&_amount {
+				position: relative;
+				top: -0.4em;
+			}
+		}
+		&_h {
+			height: 2.5em;
+		    padding: 0.2em 0;
+		    overflow: hidden;
+		    display: block;
+		}
+		&_p {
+			height: 3.7em;
+			overflow: hidden;
+		}
+		&_btn {
+		    padding: 0.9em 3.5em;
+			color: #808080;
+			font-size: 1em;
+			background-color: #fff;
+			border: 0.063em solid #ccc;
+			border-radius: 1.563em;
+			&:hover {
+				background-color: #DEDEDE;
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+.slick-slide:focus {
+	outline: 0 !important;
+}

@@ -1,0 +1,31 @@
+/* Follow
+-------------------------------------------------------------------------------*/
+.follow {
+	padding: 1.3em 0 6.5em;
+	@extend %clear_a;
+	&__p {
+		margin: 0;
+		float: left;
+		font-size: 1.3em;
+		line-height: 1.55em;
+	}
+	&__soc {
+		float: left;
+		padding-left: 0.6em;
+		margin: 0;
+		display: block;
+		@extend %clear_a;
+		&_item {
+			float: left;
+			margin-left: 1.1em;
+		}
+		&_link {
+			width: 1.7em;
+			height: 1.7em;
+			display: block;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

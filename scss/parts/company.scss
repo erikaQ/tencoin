@@ -1,0 +1,81 @@
+/* Company
+-------------------------------------------------------------------------------*/
+.company {
+	margin-bottom: 5.5em;
+	&:after {
+		content: '';
+		clear: both;
+	}
+	&__left {
+		width: 43%;
+		padding-right: 7%;
+		float: left;
+	}
+	&__interest {
+		&:after {
+			content: '';
+			clear: both;
+		}
+		&_item {
+			width: 33.333%;
+			float: left;
+			padding-right: 5%;
+			margin-bottom: 2.4em;
+		}
+		&_number  {
+			margin-bottom: 0.1em;
+			display: block;
+			color: $color_primary;
+			font-size: 2.8em;
+			font-family: "Roboto Slab";
+		}
+		&_info {
+			height: 4.2em;
+			overflow: hidden;
+			line-height: 1.438em;
+		}
+	}
+	&__right {
+	    padding: 6.7em 8.5em 8.4em;
+		overflow: hidden;
+		color: $color_white;
+		background-color: $color_primary;
+		&_h {
+			margin-bottom: 0.75em;
+			font-size: 3.16em;
+			font-weight: 900;
+		}
+		&_link {
+			margin-bottom: 0.65em;
+			padding: 0.17em 0.55em 0.34em;
+			display: inline-block;
+			cursor: default;
+			color: $color_primary;
+			font-size: 2em;
+			font-family: "Roboto Slab";
+			font-weight: 300;
+			background-color: #fff;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		&_p {
+			font-size: 2.03em;
+			line-height: 1.5em;
+		}
+		&_down {
+			position: relative;
+			height: 3.1em;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 5em;
+				height: 0.1em;
+				background-color: #fff;
+			}
+		}
+	}
+}

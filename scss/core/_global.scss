@@ -1,0 +1,56 @@
+body {
+	color: $main_color;
+	font-size: $main_font_size;
+	font-family: $main_font_family;
+	line-height: $main_line_height;
+	font-weight: 300;
+}
+
+a {
+ 	cursor: pointer;
+ 	&:hover {
+ 		text-decoration: underline;
+ 	}
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h2 {
+	position: relative;
+	top: -0.1em;
+	margin: 0 0 1.3em;
+	color: $color_primary;
+	font-family: "Roboto Slab";
+	font-size: 2.9em;
+	font-weight: 400;
+	&:before {
+		content: '<';
+		position: relative;
+		top: -0.07em;
+		margin-right: 0.1em;
+	}
+}
+
+p {
+	font-weight: 300;
+	&.bold {
+		padding: 2.5em 0 1.8em;
+		color: #000;
+		font-weight: 900;
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+}

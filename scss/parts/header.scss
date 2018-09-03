@@ -1,0 +1,146 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 1.2em 0 1em;
+	@extend %clear_a;
+	@media (max-width : 767px) {
+		padding: 1em 0;
+	}
+	&__logo {
+		float: left;
+		width: 12em;
+		@media (max-width : 767px) {
+			padding-top: 0.3em;
+		}
+	}
+	&__right {
+		padding: 0.6em 0;
+		float: right;
+		@extend %clear_a;
+			@media (max-width : 767px) {
+				display: none;
+			}
+	}
+	&__dropdown {
+		float: left;
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* Navbar
+-------------------------------------------------------------------------------*/
+.navbar {
+	float: left;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: right;
+	&__item {
+		padding: 0 1.25em;
+		display: inline-block;
+		@media (max-width : 992px) {
+			padding: 0 1em;
+		}
+	}
+	&__link {
+		color: #666666;
+		font-size: 1em;
+		font-weight: 500;
+	}
+	&__toggle {
+		position: absolute;
+		top: 0.5em;
+		right: 0;
+		width: 3em;
+		height: 2.5em;
+		padding: 0.2em 0;
+		@media (max-width : 767px) {
+			display: block;
+		}
+		&_wrap {
+			display: none;
+			&:hover {
+				.navbar__toggle {
+					opacity: .7;
+				}
+			}
+			@media (max-width : 767px) {
+				position: relative;
+				padding: 2em 0 1.5em;
+				display: block;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.icon-bar {
+	width: 100%;
+	height: 0.5em;
+	margin-bottom: 0.5em;
+	display: block;
+	background-color: #666;
+	-webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+	border-radius: 20%;
+}
+
+.dropdown {
+	position: relative;
+	margin-left: 5.4em;
+	font-size: 1em;
+	@media (max-width : 992px) {
+		margin-left: 3em;
+	}
+	&__toggle {
+		color: #666;
+		font-weight: 500;
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+		&_caret {
+			position: relative;
+			top: -0.1em;
+			margin-left: 3px;
+			font-size: 0.7em;
+		}
+	}
+	&__menu {
+		position: absolute;
+		z-index: 5;
+		width: 2.5em;
+		// padding: 0.5em;
+		margin-left: -0.5em;
+		margin-top: 0.3em;
+		background-color: #fff;
+	    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+	    border-radius: 3px;
+		display: none;
+		&.open {
+			display: block;
+		}
+		&_item {
+			padding: 0.2em 0.5em;
+			display: block;
+			color: #666;
+			font-weight: 500;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				background-color: #eee;
+			}
+			&.active {
+				background-color: #D8D8D8;
+			}
+		}
+	}
+
+}

@@ -2,20 +2,37 @@
 header.header
 	.container_center
 
-		a.logo
-			img(src="img/logo.png")
+		a.header__logo(href="/")
+			img(src="img/logo.svg")
 
 		// begin navbar 
+		.header__right#navbar.js-navbar
+			ul.navbar
+				li.navbar__item
+					a.navbar__link Home
+				li.navbar__item
+					a.navbar__link About us
+				li.navbar__item
+					a.navbar__link Products
+				li.navbar__item
+					a.navbar__link News
+				li.navbar__item
+					a.navbar__link Career
+				li.navbar__item
+					a.navbar__link Contacts
 
-		ul.navbar
+			.dropdown.header__dropdown
+				a.dropdown__toggle.js-dropdown__toggle(href="#" data-toggle="dropdown") En
+					span.dropdown__toggle_caret.icon-dropdown
+				.dropdown__menu
+					a.dropdown__menu_item.active(href="#") En
+					a.dropdown__menu_item(href="#") Ru
 
-			li.navbar__item
-				a.navbar__link Item_1
-			li.navbar__item
-				a.navbar__link Item_2
-			li.navbar__item
-				a.navbar__link Item_3
-
+		.navbar__toggle_wrap.js__navbar-toggle
+			a.navbar__toggle(href="#navbar")
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
 		// end navbar 
 
 // end header 

@@ -1,0 +1,42 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	@extend %clear_a;
+	&__left {
+		padding: 3.15em 0;
+		width: 24%;
+		float: left;
+	}
+	&__logo {
+		width: 6.7em;
+		display: block;
+		&_img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__right {
+		padding: 3.4em 0;
+		overflow: hidden;
+		@extend %clear_all;
+	}
+	&__copyright {
+		float: left;
+	}
+	&__rules {
+		float: right;
+		@extend %clear_a;
+		&_item {
+			float: left;
+			margin-left: 3em;
+		}
+		&_link {
+			color: #666;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+

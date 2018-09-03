@@ -87,6 +87,71 @@ $(document).ready(function() {
 
     checkOnResize();
 
+
+    // Dropdown in Header
+    $('.js-dropdown__toggle').on('click', function() {
+        var dropdown = $('.dropdown__menu');
+
+        dropdown.toggleClass('open');
+    });
+    $('.dropdown__menu_item').on('click', function() {
+        var $this = $(this),
+            text = $('.js-dropdown__toggle').text();
+
+        if( !$this.hasClass('active') ) {
+            $('.dropdown__menu_item').removeClass('active');
+        }
+
+        if( text == "En" ) {
+            text.text("Ru");
+        } else {
+            text.text("En");
+        }
+
+        $this.toggleClass('active');
+        $('.dropdown__menu').removeClass('open');
+    });
+
+
+    // Mobile menu
+    $('.js__navbar-toggle').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            navbar = $('.js-navbar'),
+            navH = $('.js-navbar').innerHeight();
+
+        if(!$this.hasClass('open')) {
+            $('.js-navbar').slideUp(1000);
+            $('.js__navbar-toggle').removeClass('open');
+        }
+
+        $this.toggleClass('open');
+        $(navbar).slideToggle();
+    });
+
+
+    // Slick slider http://kenwheeler.github.io/slick/
+    $('.js-slider__home, .js-slider__news').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    });
+    $('.js-slider__prev').on('click', function() {
+        $('.js-slider__home').slick('slickPrev');
+     });
+
+     $('.js-slider__next').on('click', function() {
+        $('.js-slider__home').slick('slickNext');
+     });
+     $('.js-slider__news_prev').on('click', function() {
+        $('.js-slider__news').slick('slickPrev');
+     });
+
+     $('.js-slider__news_next').on('click', function() {
+        $('.js-slider__news').slick('slickNext');
+     });
+
 });
 
 $(window).resize(function(event) {
