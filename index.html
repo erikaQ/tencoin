@@ -17,15 +17,15 @@
           <div class="navbar__toggle_wrap js__navbar-toggle"><a class="navbar__toggle" href="#navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div>
           <div class="header__right js-navbar" id="navbar">
             <ul class="navbar">
-              <li class="navbar__item"><a class="navbar__link">Home</a></li>
-              <li class="navbar__item"><a class="navbar__link">About us</a></li>
-              <li class="navbar__item"><a class="navbar__link">Products</a></li>
-              <li class="navbar__item"><a class="navbar__link">News</a></li>
-              <li class="navbar__item"><a class="navbar__link">Career</a></li>
-              <li class="navbar__item"><a class="navbar__link">Contacts</a></li>
+              <li class="navbar__item"><a class="navbar__link active" href="#">Home</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">About us</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Products</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">News</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Career</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Contacts</a></li>
             </ul>
-            <div class="dropdown header__dropdown"><a class="dropdown__toggle js-dropdown__toggle" href="#" data-toggle="dropdown">En<span class="dropdown__toggle_caret icon-dropdown"></span></a>
-              <div class="dropdown__menu"><a class="dropdown__menu_item active" href="#">En</a><a class="dropdown__menu_item" href="#">Ru</a></div>
+            <div class="language header__language"><a class="language__toggle js-language__toggle" href="#">En<span class="language__toggle_caret icon-dropdown"></span></a>
+              <div class="language__menu"><a class="language__menu_item active" href="#">En</a><a class="language__menu_item" href="#">Ru</a></div>
             </div>
           </div>
           <!-- end navbar -->
@@ -36,16 +36,18 @@
       <main class="main__content">
         <div class="container_center">
           <!-- begin .top-->
-          <section class="top">
-            <div class="top__bg"><img class="top__img" src="img/top/top_img1.jpg" alt=""/><span class="top__blackout"></span></div>
-            <div class="top__content">
-              <div class="top__h">Developing the future</div>
-              <div class="top__sub">Software solution for <a class="top__sub_link" href="#">&lt; fintech &gt;</a></div>
+          <div class="top_wrap">
+            <div class="top">
+              <div class="top__bg main"></div>
+              <div class="top__content">
+                <div class="top__h">Developing the future</div>
+                <div class="top__sub">Software solution for <a class="top__sub_link" href="#">&lt; fintech &gt;</a></div>
+              </div>
             </div>
-          </section>
+          </div>
           <!-- end .top-->
           <!-- begin .follow-->
-          <section class="follow">
+          <div class="follow">
             <p class="follow__p">Follow Tencoins</p>
             <ul class="follow__soc">
               <li class="follow__soc_item"><a class="follow__soc_link" href="#"><span class="icon-soc1 follow__soc_icon"></span></a></li>
@@ -53,14 +55,14 @@
               <li class="follow__soc_item"><a class="follow__soc_link" href="#"><span class="icon-soc3 follow__soc_icon"></span></a></li>
               <li class="follow__soc_item"><a class="follow__soc_link" href="#"><span class="icon-soc4 follow__soc_icon"></span></a></li>
             </ul>
-          </section>
+          </div>
           <!-- end .follow-->
           <!-- begin .company-->
-          <section class="company">
+          <div class="company">
             <div class="company__left">
-              <h2>Сompany</h2>
-              <p>Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.</p>
-              <p class="bold">Our solution maybe interested for</p>
+              <h2 class="company__h2">Сompany</h2>
+              <p class="company__p">Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.</p>
+              <p class="company__p_bold">Our solution maybe interested for</p>
               <ul class="company__interest">
                 <li class="company__interest_item">
                   <div class="company__interest_number">01</div>
@@ -89,11 +91,11 @@
               <div class="company__right_p">for the new e-economy, including cryptocurrency market</div>
               <div class="company__right_down"></div>
             </div>
-          </section>
+          </div>
           <!-- end .company-->
         </div>
         <!-- begin .slider-->
-        <section class="slider__bg">
+        <div class="slider__bg">
           <div class="slider">
             <div class="slider__left">
               <h2 class="slider__h2">Products</h2>
@@ -119,11 +121,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- end .slider-->
         <div class="container_center">
           <!-- begin .slider-->
-          <section class="slider slider__news">
+          <div class="slider slider__news">
             <div class="slider__left">
               <h2 class="slider__h2">News</h2>
               <p>Read our last news</p>
@@ -189,11 +191,11 @@
                 </div>
               </div>
             </div>
-          </section>
+          </div>
           <!-- end .slider-->
         </div>
         <!-- begin .getintouch-->
-        <section class="getintouch">
+        <div class="getintouch">
           <div class="getintouch__left">
             <h2 class="getintouch__left_h">Get in touch</h2>
             <div class="getintouch__left_contacts">
@@ -238,7 +240,7 @@
               <button class="getintouch__right_btn btn">Send</button>
             </div>
           </form>
-        </section>
+        </div>
         <!-- end .getintouch-->
       </main>
       <!-- end main__content -->

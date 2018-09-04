@@ -5,38 +5,35 @@
 	background-color: #f9f9f9;
 	@extend %clear_a;
 	@media (max-width : 1366px) {
-		padding-left: 3.5em;
+		padding-left: 15px;
 	}
-	@media (max-width : 1366px) {
-		padding-left: 3.5em;
-	}
-	@media (max-width : 768px) {
-		padding: 0 1.5em;
+	@media (max-width : 1199px) {
+		padding-left: 0;
 	}
 	&__left {
 		width: 50%;	
 		float: left;
 		padding-top: 4.8em;
-		@media (max-width : 767px) {
+		@media (max-width : 1199px) {
 			padding-top: 4em;
+			padding-left: 15px;
 			width: 100%;
 			float: none;
 		}
 		&_h {
 			width: 45%;
 			float: left;
-			@media (max-width : 767px) {
+			@media (max-width : 1024px) {
 				width: 100%;
 				float: none;
-				margin-bottom: 1.3em;
+				margin-bottom: 0.7em;
 			}
 		}
 		&_contacts {
 			padding: 1.5em 7em 7.2em 0;
 			overflow: hidden;
-			@media (max-width : 767px) {
-				padding-top: 0;
-				padding-bottom: 4em;
+			@media (max-width : 1024px) {
+				padding: 0 0 4em 0;
 			}
 		}
 		&_row {
@@ -44,6 +41,11 @@
 			&_par {
 				width: 30%;
 				float: left;
+				@media (max-width : 767px) {
+					width: 100%;
+					float: none;
+					margin-bottom: 0.5em;
+				}
 			}
 			&_value {
 				overflow: hidden;
@@ -52,14 +54,19 @@
 				line-height: 1.7em;
 				margin-top: 3.4em;
 				margin-bottom: 0;
+				@media (max-width : 1024px) {
+					margin-top: 0;
+				}
 			}
 		}
 	}
 	&__soc {
 		position: relative;
-		// top: -1em;
 		padding-left: 0;
 		margin-left: -1.1em;
+		@media (max-width : 320px) {
+			margin-left: 0;
+		}
 		&_link {
 			display: block;
 		}
@@ -74,13 +81,18 @@
 		@media (max-width: 1199px) {
 			padding: 6.1em 7em 4.9em 3em;
 		}
-		@media (max-width: 767px) {
-			padding: 4em 1.5em;
+		@media (max-width: 1024px) {
+			padding: 4em 15px 2em;
 		}
 		&_column {
 			float: left;
 			width: 50%;
 			padding-left: 3.2em;
+			@media (max-width : 1024px) {
+				&:first-child {
+					padding-left: 0;
+				}
+			}
 			@media (max-width : 767px) {
 				float: none;
 				width: 100%;
@@ -101,7 +113,7 @@
 		}
 		&_btn {
 			width: 100%;
-			margin-top: 2.4em;
+			margin-top: 2.6em;
 			padding: 0.9em 3.5em;
 			color: $color_primary;
 			font-size: 1em;
@@ -111,6 +123,9 @@
 			&:hover {
 				color: $color_primary;
 				opacity: 0.7;
+			}
+			@media (max-width : 767px) {
+				margin-top: 0;
 			}
 		}
 	}

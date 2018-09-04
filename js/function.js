@@ -88,18 +88,18 @@ $(document).ready(function() {
     checkOnResize();
 
 
-    // Dropdown in Header
-    $('.js-dropdown__toggle').on('click', function() {
-        var dropdown = $('.dropdown__menu');
+    // Language dropdown in Header
+    $('.js-language__toggle').on('click', function() {
+        var language = $('.language__menu');
 
-        dropdown.toggleClass('open');
+        language.toggleClass('open');
     });
-    $('.dropdown__menu_item').on('click', function() {
+    $('.language__menu_item').on('click', function() {
         var $this = $(this),
-            text = $('.js-dropdown__toggle').text();
+            text = $('.js-language__toggle').text();
 
         if( !$this.hasClass('active') ) {
-            $('.dropdown__menu_item').removeClass('active');
+            $('.language__menu_item').removeClass('active');
         }
 
         if( text == "En" ) {
@@ -109,7 +109,7 @@ $(document).ready(function() {
         }
 
         $this.toggleClass('active');
-        $('.dropdown__menu').removeClass('open');
+        $('.language__menu').removeClass('open');
     });
 
 
@@ -138,7 +138,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 767,
             settings: {
                 slidesToShow: 1
             }
@@ -188,7 +188,7 @@ function fontResize() {
     if (windowWidth >= 1200) {
     	var fontSize = windowWidth/19.05;
     } else if (windowWidth < 1200) {
-    	var fontSize = 60;
+    	var fontSize = 100;
     }
 	$('body').css('fontSize', fontSize + '%');
 }

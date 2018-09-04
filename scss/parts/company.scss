@@ -2,6 +2,9 @@
 -------------------------------------------------------------------------------*/
 .company {
 	margin-bottom: 5.5em;
+	@media (max-width: 1024px) {
+		margin: 0 -15px;
+	}
 	&:after {
 		content: '';
 		clear: both;
@@ -11,9 +14,27 @@
 		padding-right: 7%;
 		float: left;
 		overflow: hidden;
-		@media (max-width: 991px) {
+		@media (max-width: 1199px) {
 			width: 100%;
 			float: none;
+			padding-right: 0;
+		}
+		@media (max-width: 1024px) {
+			padding: 0 15px;		
+		}
+	}
+	&__h2 {
+		margin-bottom: 1.3em;
+		@media (max-width: 1024px) {
+			margin-bottom: 0.7em;
+		}
+	}
+	&__p_bold {
+		padding: 2.5em 0 1.8em;
+		color: #000;
+		font-weight: 900;
+		@media (max-width: 1024px) {
+			padding: 1em 0;
 		}
 	}
 	&__interest {
@@ -27,6 +48,9 @@
 			float: left;
 			padding-right: 5%;
 			margin-bottom: 2.4em;
+			@media (max-width: 1024px) {
+				margin-bottom: 1em;
+			}
 			@media (max-width: 991px) {
 				width: 20%;
 			}
@@ -53,16 +77,19 @@
 		overflow: hidden;
 		color: $color_white;
 		background-color: $color_primary;
-		@media (max-width: 767px) {
+		@media (max-width: 1199px) {
 			width: 100%;
-			padding: 4em 1.5em;
+			padding: 4em 15px;
 		}
 		&_h {
 			margin-bottom: 0.75em;
 			font-size: 3.16em;
 			font-weight: 900;
-			@media (max-width: 767px) {
+			@media (max-width: 1199px) {
 				font-size: 2.16em;
+			}
+			@media (max-width: 1199px) {
+				font-size: 1.8em;
 			}
 		}
 		&_link {
@@ -79,15 +106,21 @@
 			&:hover {
 				text-decoration: none;
 			}
-			@media (max-width: 767px) {
+			@media (max-width: 1199px) {
 				font-size: 1.6em;
+			}
+			@media (max-width: 1199px) {
+				font-size: 1.2em;
 			}
 		}
 		&_p {
 			font-size: 2.03em;
 			line-height: 1.5em;
-			@media (max-width: 767px) {
+			@media (max-width: 1199px) {
 				font-size: 1.8em;
+			}
+			@media (max-width: 1199px) {
+				font-size: 1.4em;
 			}
 		}
 		&_down {

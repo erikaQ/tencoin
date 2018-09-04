@@ -15,24 +15,24 @@ header.header
 		.header__right#navbar.js-navbar
 			ul.navbar
 				li.navbar__item
-					a.navbar__link Home
+					a.navbar__link.active(href="#") Home
 				li.navbar__item
-					a.navbar__link About us
+					a.navbar__link(href="#") About us
 				li.navbar__item
-					a.navbar__link Products
+					a.navbar__link(href="#") Products
 				li.navbar__item
-					a.navbar__link News
+					a.navbar__link(href="#") News
 				li.navbar__item
-					a.navbar__link Career
+					a.navbar__link(href="#") Career
 				li.navbar__item
-					a.navbar__link Contacts
+					a.navbar__link(href="#") Contacts
 
-			.dropdown.header__dropdown
-				a.dropdown__toggle.js-dropdown__toggle(href="#" data-toggle="dropdown") En
-					span.dropdown__toggle_caret.icon-dropdown
-				.dropdown__menu
-					a.dropdown__menu_item.active(href="#") En
-					a.dropdown__menu_item(href="#") Ru
+			.language.header__language
+				a.language__toggle.js-language__toggle(href="#") En
+					span.language__toggle_caret.icon-dropdown
+				.language__menu
+					a.language__menu_item.active(href="#") En
+					a.language__menu_item(href="#") Ru
 		// end navbar 
 
 // end header 
