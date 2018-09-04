@@ -430,8 +430,8 @@ template {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?ljz6tr");
-  src: url("../fonts/icomoon.eot?ljz6tr#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ljz6tr") format("truetype"), url("../fonts/icomoon.woff?ljz6tr") format("woff"), url("../fonts/icomoon.svg?ljz6tr#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?9xx6ti");
+  src: url("../fonts/icomoon.eot?9xx6ti#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?9xx6ti") format("truetype"), url("../fonts/icomoon.woff?9xx6ti") format("woff"), url("../fonts/icomoon.svg?9xx6ti#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -448,52 +448,46 @@ template {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-soc3 {
-  color: #50ABF5; }
-  .icon-soc3:before {
-    content: ""; }
+.icon-arrow:before {
+  content: ""; }
 
-.icon-calendar {
-  font-size: 1.4em; }
-  .icon-calendar:before {
-    content: ""; }
-
-.icon-dropdown:before {
+.icon-calendar:before {
   content: ""; }
 
-.icon-eye {
-  position: relative;
-  margin-right: 0.4em;
-  font-size: 1.4em; }
-  .icon-eye:before {
-    content: ""; }
+.icon-dropdown:before {
+  content: ""; }
 
-.icon-arrow:before {
+.icon-eye:before {
   content: ""; }
 
-.icon-house:before {
-  content: ""; }
+.icon-facebook {
+  color: #3A559F; }
+  .icon-facebook:before {
+    content: ""; }
 
-.icon-slide_next:before {
+.icon-house:before {
   content: ""; }
 
-.icon-slide_prev:before {
-  content: ""; }
+.icon-instagram {
+  color: #C536AC; }
+  .icon-instagram:before {
+    content: ""; }
 
-.icon-soc1 {
+.icon-m {
   color: #000; }
-  .icon-soc1:before {
+  .icon-m:before {
     content: ""; }
 
-.icon-soc2 {
-  color: #3A559F; }
-  .icon-soc2:before {
-    content: ""; }
+.icon-slide_next:before {
+  content: ""; }
 
-.icon-soc4 {
-  color: #C536AC; }
-  .icon-soc4:before {
-    content: ""; }
+.icon-slide_prev:before {
+  content: ""; }
+
+.icon-twitter {
+  color: #50ABF5; }
+  .icon-twitter:before {
+    content: ""; }
 
 body {
   color: #666;

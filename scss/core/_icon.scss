@@ -1,26 +1,25 @@
 $icomoon-font-family: "icomoon" !default;
 $icomoon-font-path: "../fonts" !default;
 
-$icon-soc3: "\e90a";
-$icon-calendar: "\e900";
-$icon-dropdown: "\e901";
-$icon-eye: "\e902";
-$icon-arrow: "\e903";
-$icon-house: "\e904";
-$icon-slide_next: "\e905";
-$icon-slide_prev: "\e906";
-$icon-soc1: "\e907";
-$icon-soc2: "\e908";
-$icon-soc4: "\e909";
-
+$icon-arrow: "\e900";
+$icon-calendar: "\e901";
+$icon-dropdown: "\e902";
+$icon-eye: "\e903";
+$icon-facebook: "\e904";
+$icon-house: "\e905";
+$icon-instagram: "\e906";
+$icon-m: "\e907";
+$icon-slide_next: "\e908";
+$icon-slide_prev: "\e909";
+$icon-twitter: "\e90a";
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ljz6tr');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ljz6tr#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ljz6tr') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ljz6tr') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ljz6tr##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9xx6ti');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9xx6ti#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9xx6ti') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9xx6ti') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9xx6ti##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,14 +39,12 @@ $icon-soc4: "\e909";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-soc3 {
-  color: #50ABF5;
+.icon-arrow {
   &:before {
-    content: $icon-soc3; 
+    content: $icon-arrow; 
   }
 }
 .icon-calendar {
-  font-size: 1.4em;
   &:before {
     content: $icon-calendar; 
   }
@@ -58,21 +55,31 @@ $icon-soc4: "\e909";
   }
 }
 .icon-eye {
-  position: relative;
-  margin-right: 0.4em;
-  font-size: 1.4em;
   &:before {
     content: $icon-eye; 
   }
 }
-.icon-arrow {
+.icon-facebook {
+  color: #3A559F;
   &:before {
-    content: $icon-arrow; 
+    content: $icon-facebook; 
   }
 }
 .icon-house {
   &:before {
     content: $icon-house; 
+  }
+}
+.icon-instagram {
+  color: #C536AC;
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-m {
+  color: #000;
+  &:before {
+    content: $icon-m; 
   }
 }
 .icon-slide_next {
@@ -85,28 +92,9 @@ $icon-soc4: "\e909";
     content: $icon-slide_prev; 
   }
 }
-.icon-soc1 {
-  color: #000;
+.icon-twitter {
+  color: #50ABF5;
   &:before {
-    content: $icon-soc1; 
+    content: $icon-twitter; 
   }
 }
-.icon-soc2 {
-  color: #3A559F;
-  &:before {
-    content: $icon-soc2; 
-  }
-}
-.icon-soc4 {
-  color: #C536AC;
-  &:before {
-    content: $icon-soc4; 
-  }
-}
-
-// .icon-soc1,
-// .icon-soc2,
-// .icon-soc3,
-// .icon-soc4 {
-//   font-size: 1.7em;
-// }
