@@ -9,8 +9,8 @@
 			padding: 5.8em 15px 3.5em;
 		}
 		@media (max-width : 1024px) {
-			padding-top: 4em;
-			margin-bottom: 4em;
+			padding-top: 2em;
+			margin-bottom: 2em;
 		}
 	}
 	&__news {
@@ -69,7 +69,6 @@
 		}
 	}
 	&__home {
-		// width: auto;
 		margin-left: -1em;
 		&_wrap {
 			width: 100%;
@@ -78,6 +77,7 @@
 			display: block;
 			padding-left: 1em;
 			text-decoration: none;
+			overflow: hidden;
 			&:focus {
 				outline: 0;
 			}
@@ -104,24 +104,11 @@
 	}
 	&__news {
 		&_info {
-			margin-top: 1.15em;
+			margin: 0.5em 0;
+			font-size: 0.75em;
 			font-weight: 400;
-			overflow: hidden;			
-			&:after {
-				content: '';
-				clear: both;
-			}
 			&_date {
-				float: left;
-				margin-right: 2.2em;
-			}
-			&_eye {
-				float: left;
-			}
-			&_day,
-			&_number {
-				font-size: 0.75em;
-				line-height: 1.4em;
+				margin-right: 1.65em;
 			}
 		}
 		&_h {
@@ -155,4 +142,19 @@
 
 .slick-slide:focus {
 	outline: 0 !important;
+}
+
+.icon-calendar,
+.icon-eye {
+	margin-right: 7px;
+}
+.icon-calendar {
+	position: relative;
+	top: 0.05em;
+	font-size: 1.25em;
+}
+.icon-eye {
+	position: relative;
+	top: 0.23em;
+	font-size: 1.5em;
 }

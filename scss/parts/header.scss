@@ -65,8 +65,15 @@
 		font-size: 1em;
 		font-weight: 500;
 		text-decoration: none;
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid transparent;
 		&:hover {
-			text-decoration: underline;
+			color: $color_primary;
+			text-decoration: none;
+		}
+		&.active {
+			color: $color_primary;
+			border-bottom: 1px solid $color_primary;
 		}
 		@media (max-width : 768px) {
 			padding: 0.5em 1.5em;

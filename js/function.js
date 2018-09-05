@@ -22,6 +22,14 @@ function isXsWidth() { return $(window).width() < TempApp.smWidth; } // < 768
 function isIOS() { return TempApp.iOS(); } // for iPhone iPad iPod
 function isTouch() { return TempApp.touchDevice(); } // for touch device
 
+// Preloader
+$(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+    $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+
 $(document).ready(function() {
 
     // Хак для клика по ссылке на iOS
