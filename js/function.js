@@ -23,12 +23,12 @@ function isIOS() { return TempApp.iOS(); } // for iPhone iPad iPod
 function isTouch() { return TempApp.touchDevice(); } // for touch device
 
 // Preloader
-$(window).on('load', function () {
-    $preloader = $('.loaderArea'),
-    $loader = $preloader.find('.loader');
-    $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-});
+// $(window).on('load', function () {
+//     $preloader = $('.loaderArea'),
+//     $loader = $preloader.find('.loader');
+//     $loader.fadeOut();
+//     $preloader.delay(350).fadeOut('slow');
+// });
 
 $(document).ready(function() {
 
@@ -141,6 +141,7 @@ $(document).ready(function() {
 
 
     // Slick slider http://kenwheeler.github.io/slick/
+    // Main page
     $('.js-slider__home, .js-slider__news').slick({
         arrows: false,
         dots: false,
@@ -168,6 +169,31 @@ $(document).ready(function() {
 
      $('.js-slider__news_next').on('click', function() {
         $('.js-slider__news').slick('slickNext');
+     });
+
+
+     // Location slider - Career page / Tab Location
+     $('.js__location__slider').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                dots: false
+            }
+        }
+        ]
+     });
+     $('.js-location__prev').on('click', function() {
+        $('.js__location__slider').slick('slickPrev');
+     });
+
+     $('.js-location__next').on('click', function() {
+        $('.js__location__slider').slick('slickNext');
      });
 
 });

@@ -35,20 +35,22 @@ block content
 		.career
 
 			// begin Nav tabs
-			ul.nav.nav-tabs.career__tabs
-				li.career__item.active
-					a.career__link(href="#ca1", data-toggle="tab") Our principles
+			ul.career__tabs
 				li.career__item
-					a.career__link(href="#ca2", data-toggle="tab") Locations
+					a.career__link.active(href="#") Our principles
 				li.career__item
-					a.career__link(href="#ca3", data-toggle="tab") Jobs
+					a.career__link(href="career__locations.html") Locations
 				li.career__item
-					a.career__link(href="#ca4", data-toggle="tab") Hiring process
+					a.career__link(href="#") Jobs
+				li.career__item
+					a.career__link(href="#") Hiring process
 			// end Nav tabs
 
 			// begin Tab panes
-			.tab-content.career__content
-				.tab-pane.career__pane.active(id="ca1")
+			.career__content
+				.career__pane
+
+					// begin Principles
 					.page__left
 						h2.page__h2 10-C rule
 						p At ten coins we follow the 10-C rule
@@ -116,9 +118,8 @@ block content
 								p.principles__p
 									span.principles__p_bold Celebrate
 									|- We work hard but we believe that hard work should be fun work. We always celebrate our success
-				.tab-pane.career__pane(id="ca2") Box_2
-				.tab-pane.career__pane(id="ca3") Box_3
-				.tab-pane.career__pane(id="ca4") Box_4
+					// end Principles
+					
 			// end Tab panes
 
 		// end .career

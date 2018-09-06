@@ -2,6 +2,9 @@
  ----------------------------------------------------------------------------- */
  .career {
  	padding-bottom: 5em;
+ 	@media (max-width : 767px) {
+ 		padding-bottom: 2em;
+ 	}
  	&__tabs {
  		width: 100%;
  		margin-top: 3.35em;
@@ -17,16 +20,11 @@
  		}
  	}
  	&__item {
+ 		float: left;
  		width: 25%;
  		text-align: center;
  		@media (max-width : 767px) {
 			width: 100%;
- 		}
- 		&.active {
- 			.career__link {
- 				color: $color_white;
-	 			background-color: $color_primary;
- 			}
  		}
  	}
  	&__link {
@@ -40,8 +38,17 @@
 		&:hover {
 			text-decoration: none;
 		}
+		&.active,
+ 		&:hover {
+			color: $color_white;
+ 			background-color: $color_primary;
+ 		}
+		@media (max-width : 1024px) {
+			padding: 15px 20px;
+		}
 		@media (max-width : 767px) {
 			padding: 10px 20px;
+			// font-size: 0.8em;
 		}
  	}
  }
