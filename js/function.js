@@ -22,14 +22,6 @@ function isXsWidth() { return $(window).width() < TempApp.smWidth; } // < 768
 function isIOS() { return TempApp.iOS(); } // for iPhone iPad iPod
 function isTouch() { return TempApp.touchDevice(); } // for touch device
 
-// Preloader
-// $(window).on('load', function () {
-//     $preloader = $('.loaderArea'),
-//     $loader = $preloader.find('.loader');
-//     $loader.fadeOut();
-//     $preloader.delay(350).fadeOut('slow');
-// });
-
 $(document).ready(function() {
 
     // Хак для клика по ссылке на iOS
@@ -141,7 +133,6 @@ $(document).ready(function() {
 
 
     // Slick slider http://kenwheeler.github.io/slick/
-    // Main page
     $('.js-slider__home, .js-slider__news').slick({
         arrows: false,
         dots: false,
@@ -149,7 +140,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         responsive: [
         {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1
             }
@@ -171,30 +162,31 @@ $(document).ready(function() {
         $('.js-slider__news').slick('slickNext');
      });
 
-
      // Location slider - Career page / Tab Location
      $('.js__location__slider').slick({
-        arrows: false,
+        // arrows: false,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
+        prevArrow: $('.js-location__prev'),
+        nextArrow: $('.js-location__next'),
         responsive: [
         {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
                 dots: false
             }
         }
         ]
      });
-     $('.js-location__prev').on('click', function() {
-        $('.js__location__slider').slick('slickPrev');
-     });
+     // $('.js-location__prev').on('click', function() {
+     //    $('.js__location__slider').slick('slickPrev');
+     // });
 
-     $('.js-location__next').on('click', function() {
-        $('.js__location__slider').slick('slickNext');
-     });
+     // $('.js-location__next').on('click', function() {
+     //    $('.js__location__slider').slick('slickNext');
+     // });
 
 
      // Jobs Collapse
@@ -204,13 +196,15 @@ $(document).ready(function() {
             jobId = $this.attr('href');
 
         if( !$this.hasClass('active') ) {
-            $('.js_jobs__content').slideUp();
+            $('.js_jobs__content').removeClass('open');
             $('.js_jobs__collapse').removeClass('active');
         }
 
         $this.toggleClass('active');
-        $(jobId).slideToggle(200);
+        $(jobId).toggleClass('open');
     });
+
+
 
 });
 

@@ -4,11 +4,15 @@
  	padding-bottom: 5em;
  	@media (max-width : 767px) {
  		padding-bottom: 2em;
+ 		&.career__justify {
+ 			margin-left: -15px;
+ 			margin-right: -15px;
+ 		}
  	}
  	&__tabs {
  		width: 100%;
  		margin-top: 3.35em;
- 		margin-bottom: 2.7em;
+ 		margin-bottom: 3.15em;
  		border: 0;
  		@extend %clear_a;
  		overflow: hidden;
@@ -18,6 +22,9 @@
  			margin-right: -15px;
  			margin-top: 0;
  		}
+ 	}
+ 	&__content {
+
  	}
  	&__item {
  		float: left;
@@ -43,12 +50,11 @@
 			color: $color_white;
  			background-color: $color_primary;
  		}
-		@media (max-width : 1024px) {
-			padding: 15px 20px;
-		}
+ 		@media (max-width : 1199px) {
+ 			padding: 1.5em 1em;
+ 		}
 		@media (max-width : 767px) {
-			padding: 10px 20px;
-			// font-size: 0.8em;
+			padding: 1em;
 		}
  	}
  }
@@ -58,7 +64,7 @@
  	&__left {
  		width: 25%;
  		float: left;
- 		@media (max-width : 1024px) {
+ 		@media (max-width : 1199px) {
  			width: 100%;
  			float: none;
  		}
@@ -74,6 +80,13 @@
  	&__h3 {
  		position: relative;
 		margin-bottom: 0.4em;
+ 	}
+ 	&__h4 {
+ 		margin-top: 0.6em;
+ 		margin-bottom: 1.1em;
+ 		@media (max-width : 767px) {
+ 			font-size: 1.7em;
+ 		}
  	}
  	&__p {
  		// margin-bottom: 1.3em;

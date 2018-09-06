@@ -73,3 +73,10 @@ img {
 	display: inline-block;
 	text-transform: uppercase;
 }
+
+.mobil-indent {
+	@media (max-width: 1366px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
