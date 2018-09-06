@@ -17,6 +17,7 @@
 		@media (max-width : 1199px) {
 			padding-top: 4em;
 			padding-left: 15px;
+			padding-right: 15px;
 			width: 100%;
 			float: none;
 		}
@@ -64,7 +65,8 @@
 		position: relative;
 		padding-left: 0;
 		margin-left: -1.1em;
-		@media (max-width : 320px) {
+		@media (max-width : 480px) {
+			margin-left: 0;
 			margin-left: 0;
 		}
 		&_link {

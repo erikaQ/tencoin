@@ -196,6 +196,22 @@ $(document).ready(function() {
         $('.js__location__slider').slick('slickNext');
      });
 
+
+     // Jobs Collapse
+    $('.js_jobs__collapse').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            jobId = $this.attr('href');
+
+        if( !$this.hasClass('active') ) {
+            $('.js_jobs__content').slideUp();
+            $('.js_jobs__collapse').removeClass('active');
+        }
+
+        $this.toggleClass('active');
+        $(jobId).slideToggle(200);
+    });
+
 });
 
 $(window).resize(function(event) {
