@@ -64,9 +64,11 @@
  	&__left {
  		width: 25%;
  		float: left;
+ 		padding-right: 7%;
  		@media (max-width : 1199px) {
  			width: 100%;
  			float: none;
+ 			padding-right: 0;
  		}
  	}
  	&__right {
@@ -76,10 +78,14 @@
  		position: relative;
 	    top: -0.2em;
 	    margin: 0.3em 0 0;
+	    line-height: 1.4;
  	}
  	&__h3 {
  		position: relative;
 		margin-bottom: 0.4em;
+		@media (max-width : 1024px) {
+			margin-bottom: 0.8em;
+		}
  	}
  	&__h4 {
  		margin-top: 0.6em;
@@ -89,8 +95,6 @@
  		}
  	}
  	&__p {
- 		// margin-bottom: 1.3em;
- 		padding-right: 17%;
  		line-height: 1.4;
  	}
  }
@@ -99,6 +103,9 @@
  	margin-left: -2em;
  	margin-bottom: 3.2em;
  	@extend %clear_a;
+ 	@media (max-width : 1024px) {
+ 		margin-bottom: 2em;
+ 	}
  	&__item {
 		width: 33.333%;
 		float: left;
@@ -106,6 +113,7 @@
 		@media (max-width : 1024px) {
 			width: 100%;
 			float: none;
+			margin-bottom: 1.5em;
 		}
  	}
  	&__number {
