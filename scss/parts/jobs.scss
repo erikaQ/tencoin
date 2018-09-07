@@ -12,7 +12,8 @@
 		background-color: $color_white;
 	}
 	&_link {
-	    padding: 1em 50px;
+		position: relative;
+	    padding: 1em 4em 1em 50px;
 		display: block;
 		color: #000;
 		font-size: 1.5em;
@@ -26,6 +27,12 @@
 		}
 		@media (max-width : 767px) {
 			font-size: 1.1em;
+			padding-right: 3em;
+		}
+		&.active {
+			.jobs__collapse_icon {
+				top: 1.2em;
+			}
 		}
 	}
 	&_content {
@@ -91,5 +98,22 @@
 		@media (max-width : 767px) {
 			padding: 1em;
 		}
+	}
+	&_icon {
+		position: absolute;
+		top: 1.15em;
+		right: 2em;
+		font-size: 1em;
+		@media (max-width : 1199px) {
+			right: 1em;
+		}
+	}
+}
+
+.icon-plus,
+.icon-minus {
+	display: none;
+	&.show {
+		display: inline-block;
 	}
 }

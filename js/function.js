@@ -193,15 +193,21 @@ $(document).ready(function() {
     $('.js_jobs__collapse').on('click', function(e) {
         e.preventDefault();
         var $this = $(this),
-            jobId = $this.attr('href');
+            jobId = $this.attr('href'),
+            plus = $('.js-icon-plus'),
+            minus = $('.js-icon-minus');
 
         if( !$this.hasClass('active') ) {
             $('.js_jobs__content').removeClass('open');
             $('.js_jobs__collapse').removeClass('active');
+            $('.js-icon-plus').addClass('show')
+            $('.js-icon-minus').removeClass('show')
         }
 
         $this.toggleClass('active');
         $(jobId).toggleClass('open');
+        $(plus).toggleClass('show');
+        $(minus).toggleClass('show');
     });
 
 
