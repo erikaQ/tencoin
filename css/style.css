@@ -1337,6 +1337,11 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       background: url("../img/top/top_img3.jpg") no-repeat center top; }
     .top__bg_products {
       background: url("../img/top/top_img4.jpg") no-repeat center top; }
+    .top__bg_contacts {
+      background: url("../img/top/top_img5.jpg") no-repeat center top; }
+      @media (max-width: 767px) {
+        .top__bg_contacts {
+          background-position: right top; } }
     .top__bg:before {
       content: '';
       position: absolute;
@@ -1719,6 +1724,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   @media (max-width: 1199px) {
     .getintouch {
       padding-left: 0; } }
+  .getintouch__wrap {
+    padding-bottom: 3em; }
   .getintouch__left {
     width: 50%;
     float: left;
