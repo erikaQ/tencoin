@@ -200,9 +200,8 @@ $(document).ready(function() {
         if( !$this.hasClass('active') ) {
             $('.js_jobs__content').removeClass('open');
             $('.js_jobs__collapse').removeClass('active');
-            $('.js-icon-plus').addClass('show')
-            $('.js-icon-minus').removeClass('show')
         }
+
 
         $this.toggleClass('active');
         $(jobId).toggleClass('open');

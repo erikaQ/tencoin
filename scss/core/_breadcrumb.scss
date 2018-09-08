@@ -15,12 +15,6 @@
 		display: inline-block;
 		vertical-align: baseline;
 		font-size: 0.8em;
-		// &:not(:first-child) {
-		// 	&:before {
-		// 		content: '/';
-		// 		display: inline-block;
-		// 	}
-		// }
 		&:first-child {
 			a {
 				text-decoration: none;

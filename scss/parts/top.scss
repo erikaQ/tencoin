@@ -44,11 +44,8 @@
 		}
 		&_career {
 			background: url('../img/top/top_img2.jpg') no-repeat center center;
-			@media (max-width: 480px) {
+			@media (max-width: 767px) {
 				background-position: -50em 0;
-			}
-			@media (max-width: 320px) {
-				background-position: -55em 0;
 			}
 		}
 		&_about {
@@ -105,11 +102,8 @@
 		@media (max-width: 991px) {
 			font-size: 3em;
 		}
-		@media (max-width: 767px) {
-			// font-size: 2em;
-		}
 	}
-	&__h2 {
+	&__title {
 		color: $color_white;
 		font-family: "Roboto Slab";
 		font-size: 3.125em;
