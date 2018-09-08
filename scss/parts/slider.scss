@@ -111,11 +111,7 @@
 				clear: both;
 			}
 			&_date {
-				float: left;
 				margin-right: 2.2em;
-			}
-			&_eye {
-				float: left;
 			}
 			&_day,
 			&_number {
@@ -155,4 +151,19 @@
 
 .slick-slide:focus {
 	outline: 0 !important;
+}
+
+.icon-calendar,
+.icon-eye {
+	margin-right: 7px;
+}
+.icon-calendar {
+	position: relative;
+	top: 0.05em;
+	font-size: 1.25em;
+}
+.icon-eye {
+	position: relative;
+	top: 0.23em;
+	font-size: 1.5em;
 }

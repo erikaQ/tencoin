@@ -1,28 +1,15 @@
 /* Products
 -------------------------------------------------------------------------------*/
 .products {
-	padding-top: 3.15em;
-	margin-left: -1.4em;
-	padding-bottom: 4.6em;
-	display: block;
-	overflow: hidden;
+	&__wrap {
+		padding-top: 3.15em;
+		padding-bottom: 4.6em;
+	}
 	@media (max-width: 767px) {
 		padding-bottom: 3em;
 	}
 	&__item {
-		width: 25%;
-		float: left;
-		padding-left: 1.4em;
 		margin-bottom: 1.5em;
-		@media (max-width: 1199px) {
-			width: 33.333%;
-		}
-		@media (max-width: 991px) {
-			width: 50%;
-		}
-		@media (max-width: 767px) {
-			width: 100%;
-		}
 	}
 	&__link {
 		width: 100%;

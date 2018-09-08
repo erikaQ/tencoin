@@ -81,6 +81,13 @@ img {
 	}
 }
 
+.out {
+	@media (max-width: 1366px) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
 .mb {
 	&_3 {
 		margin-bottom: 3em !important;
