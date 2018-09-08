@@ -1407,6 +1407,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       @media (max-width: 767px) {
         .top__bg_news {
           background-position: right top; } }
+    .top__bg_money {
+      background: url("../img/top/top_img7.jpg") no-repeat center top; }
     .top__bg:before {
       content: '';
       position: absolute;
@@ -1735,7 +1737,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       text-decoration: underline; }
 
 .slider__news_info {
-  margin-top: 1.15em;
+  margin-top: 0.3em;
+  margin-bottom: 1.1em;
+  font-size: 0.75em;
   font-weight: 400;
   overflow: hidden; }
   .slider__news_info:after {
@@ -1757,11 +1761,12 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     text-decoration: underline; }
 
 .slider__news_p {
-  min-height: 3.7em;
-  overflow: hidden; }
+  min-height: 4.15em;
+  overflow: hidden;
+  line-height: 1.4; }
 
 .slider__news_btn {
-  padding: 0.9em 3.5em;
+  padding: 0.9em 4.1em;
   color: #808080;
   font-size: 1em;
   background-color: #fff;
@@ -1777,17 +1782,17 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 
 .icon-calendar,
 .icon-eye {
-  margin-right: 7px; }
+  margin-right: 0.3em; }
 
 .icon-calendar {
   position: relative;
   top: 0.05em;
-  font-size: 1.25em; }
+  font-size: 1.3em; }
 
 .icon-eye {
   position: relative;
   top: 0.23em;
-  font-size: 1.5em; }
+  font-size: 1.8em; }
 
 /* Get in touch
 -------------------------------------------------------------------------------*/
@@ -2352,3 +2357,44 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .products__img {
   display: block;
   margin-bottom: 0.7em; }
+
+/* Article
+-------------------------------------------------------------------------------*/
+.page__article {
+  padding-top: 1em;
+  padding-bottom: 7em; }
+  @media (max-width: 991px) {
+    .page__article {
+      padding-top: 2.5em;
+      padding-bottom: 4em; } }
+  .page__article_h3 {
+    margin-top: 2em;
+    margin-bottom: 1.1em; }
+  .page__article_p {
+    margin-bottom: 1.5em;
+    line-height: 1.4; }
+
+.article__info {
+  margin-top: 0.8em; }
+
+.article__author {
+  margin-bottom: 5em;
+  padding-top: 1.7em;
+  font-style: italic;
+  border-top: 0.063em solid #e5e5e5; }
+
+.article__share_link {
+  position: relative;
+  padding: 0 2.65em;
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 1.6em;
+  line-height: 2em; }
+  .article__share_link:nth-child(1) {
+    background-color: #3A559F; }
+  .article__share_link:nth-child(2) {
+    background-color: #50ABF5; }
+  .article__share_link_icon {
+    position: absolute;
+    top: 0;
+    left: 0; }

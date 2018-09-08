@@ -103,7 +103,9 @@
 	}
 	&__news {
 		&_info {
-			margin-top: 1.15em;
+			margin-top: 0.3em;
+			margin-bottom: 1.1em;
+			font-size: 0.75em;
 			font-weight: 400;
 			overflow: hidden;			
 			&:after {
@@ -130,11 +132,12 @@
 		    }
 		}
 		&_p {
-			min-height: 3.7em;
+			min-height: 4.15em;
 			overflow: hidden;
+			line-height: 1.4;
 		}
 		&_btn {
-		    padding: 0.9em 3.5em;
+		    padding: 0.9em 4.1em;
 			color: #808080;
 			font-size: 1em;
 			background-color: #fff;
@@ -155,15 +158,15 @@
 
 .icon-calendar,
 .icon-eye {
-	margin-right: 7px;
+	margin-right: 0.3em;
 }
 .icon-calendar {
 	position: relative;
 	top: 0.05em;
-	font-size: 1.25em;
+	font-size: 1.3em;
 }
 .icon-eye {
 	position: relative;
 	top: 0.23em;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }

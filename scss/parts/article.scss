@@ -1,0 +1,51 @@
+/* Article
+-------------------------------------------------------------------------------*/
+.page__article {
+	padding-top: 1em;
+	padding-bottom: 7em;
+	@media (max-width: 991px) {
+		padding-top: 2.5em;
+		padding-bottom: 4em;
+	}
+	&_h3 {
+		margin-top: 2em;
+		margin-bottom: 1.1em;
+	}
+	&_p {
+		margin-bottom: 1.5em;
+		line-height: 1.4;
+	}
+}
+
+.article {
+	&__info {
+		margin-top: 0.8em;
+	}
+	&__author {
+		margin-bottom: 5em;
+		padding-top: 1.7em;
+		font-style: italic;
+		border-top: 0.063em solid #e5e5e5;;
+	}
+	&__share {
+		&_link {
+			position: relative;
+			padding: 0 2.65em;
+			display: inline-block;
+			color: $color_white;
+			margin-left: 1.6em;
+			line-height: 2em;
+			&:nth-child(1) {
+				background-color: #3A559F;
+			}
+			&:nth-child(2) {
+				background-color: #50ABF5;
+			}
+			&_icon {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
