@@ -32,6 +32,9 @@
 		&.active {
 			.jobs__collapse_icon {
 				top: 1.2em;
+				&:before {
+					content: $icon-minus;
+				}
 			}
 		}
 	}
@@ -39,17 +42,26 @@
 		height: 0;
 		overflow: hidden;
 		transition: all 0.3s;
+		.jobs__collapse_body {
+		}
 		&.open {
 			height: auto;
+			.jobs__collapse_body {
+				padding: 1.4em 50px;
+				@media (max-width : 1199px) {
+					padding: 1.4em 20px;
+				}
+			}
 		}
 	}
 	&_body {
-		padding: 1.4em 50px;
+		padding: 0 50px;
 		background-color: #fcfcfc;
 		border-left: 0.063em solid #e5e5e5;
 		border-right: 0.063em solid #e5e5e5;
+		transition: 0.3s;
 		@media (max-width : 1199px) {
-			padding: 1.4em 20px;
+			padding: 0 20px;
 		}
 	}
 	&_grid {
@@ -104,6 +116,12 @@
 		top: 1.15em;
 		right: 2em;
 		font-size: 1em;
+		font-family: '#{$icomoon-font-family}';
+		color: $color_primary;
+		transition: 0.3s;
+		&:before {
+			content: $icon-plus; 
+		}
 		@media (max-width : 1199px) {
 			right: 1em;
 		}

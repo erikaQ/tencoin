@@ -193,9 +193,7 @@ $(document).ready(function() {
     $('.js_jobs__collapse').on('click', function(e) {
         e.preventDefault();
         var $this = $(this),
-            jobId = $this.attr('href'),
-            plus = $('.js-icon-plus'),
-            minus = $('.js-icon-minus');
+            jobId = $this.attr('href');
 
         if( !$this.hasClass('active') ) {
             $('.js_jobs__content').removeClass('open');
@@ -205,8 +203,6 @@ $(document).ready(function() {
 
         $this.toggleClass('active');
         $(jobId).toggleClass('open');
-        $(plus).toggleClass('show');
-        $(minus).toggleClass('show');
     });
 
 

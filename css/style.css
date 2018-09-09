@@ -508,8 +508,6 @@ template {
 .icon-arrow {
   color: #BCBCBC; }
 
-.icon-minus,
-.icon-plus,
 .icon-quote {
   color: #0366e9; }
 
@@ -2176,6 +2174,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       padding-right: 3em; } }
   .jobs__collapse_link.active .jobs__collapse_icon {
     top: 1.2em; }
+    .jobs__collapse_link.active .jobs__collapse_icon:before {
+      content: ""; }
 
 .jobs__collapse_content {
   height: 0;
@@ -2185,15 +2185,23 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   transition: all 0.3s; }
   .jobs__collapse_content.open {
     height: auto; }
+    .jobs__collapse_content.open .jobs__collapse_body {
+      padding: 1.4em 50px; }
+      @media (max-width: 1199px) {
+        .jobs__collapse_content.open .jobs__collapse_body {
+          padding: 1.4em 20px; } }
 
 .jobs__collapse_body {
-  padding: 1.4em 50px;
+  padding: 0 50px;
   background-color: #fcfcfc;
   border-left: 0.063em solid #e5e5e5;
-  border-right: 0.063em solid #e5e5e5; }
+  border-right: 0.063em solid #e5e5e5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   @media (max-width: 1199px) {
     .jobs__collapse_body {
-      padding: 1.4em 20px; } }
+      padding: 0 20px; } }
 
 .jobs__collapse_grid {
   margin-top: 1.3em; }
@@ -2240,7 +2248,14 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   position: absolute;
   top: 1.15em;
   right: 2em;
-  font-size: 1em; }
+  font-size: 1em;
+  font-family: "icomoon";
+  color: #0366e9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .jobs__collapse_icon:before {
+    content: ""; }
   @media (max-width: 1199px) {
     .jobs__collapse_icon {
       right: 1em; } }
