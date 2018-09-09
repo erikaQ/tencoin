@@ -1,23 +1,24 @@
 /* Company
 -------------------------------------------------------------------------------*/
 .company {
-	margin-bottom: 5.5em;
+	// margin-bottom: 5.5em;
+	@extend %clear_a;
+	display: table;
 	@media (max-width: 1024px) {
 		margin: 0 -15px;
-	}
-	&:after {
-		content: '';
-		clear: both;
 	}
 	&__left {
 		width: 43%;
 		padding-right: 7%;
-		float: left;
+		// float: left;
 		overflow: hidden;
+		display: table-cell;
+		vertical-align: top;
 		@media (max-width: 1199px) {
 			width: 100%;
 			float: none;
 			padding-right: 0;
+			display: block;
 		}
 		@media (max-width: 1024px) {
 			padding: 0 15px;		
@@ -65,13 +66,17 @@
 		}
 	}
 	&__right {
-	    padding: 6.7em 8.5em 8.4em;
-		overflow: hidden;
+	    padding: 6.7em 8.5em;
+		// overflow: hidden;
+		width: 57%;
 		color: $color_white;
 		background-color: $color_primary;
+		display: table-cell;
+		vertical-align: top;
 		@media (max-width: 1199px) {
 			width: 100%;
 			padding: 4em 15px;
+			display: block;
 		}
 		&_title {
 			margin-bottom: 0.75em;

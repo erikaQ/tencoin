@@ -87,6 +87,18 @@ $(document).ready(function() {
 
     checkOnResize();
 
+    // Menu in Header
+    $('.js-navbar a').on('click', function() {
+        $this = $(this);
+
+        if( !$this.hasClass('active') ) {
+            $('.js-navbar a').removeClass('active');
+        }
+
+        $this.toggleClass('active');
+    });
+
+
 
     // Language dropdown in Header
     $('.js-language__toggle').on('click', function() {

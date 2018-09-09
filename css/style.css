@@ -8,7 +8,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,700");
-.footer__right:after, .main__content:after, .form:after, .form__row:after, .page:after, .header:after, .header__right:after, .follow:after, .follow__soc:after, .slider:after, .getintouch:after, .footer:after, .footer__rules:after, .career__tabs:after, .principles:after, .hiring:after, .hiring__item:after {
+.footer__right:after, .main__content:after, .form:after, .form__row:after, .page:after, .header:after, .header__right:after, .follow:after, .follow__soc:after, .company:after, .slider:after, .getintouch:after, .footer:after, .footer__rules:after, .career__tabs:after, .principles:after, .hiring:after, .hiring__item:after {
   content: '';
   display: table;
   clear: both; }
@@ -1249,7 +1249,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
-    border-bottom: 0.188em solid trasparent; }
+    border-bottom: 0.188em solid transparent; }
     .navbar__link:hover {
       color: #0366e9;
       text-decoration: none; }
@@ -1557,23 +1557,22 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 /* Company
 -------------------------------------------------------------------------------*/
 .company {
-  margin-bottom: 5.5em; }
+  display: table; }
   @media (max-width: 1024px) {
     .company {
       margin: 0 -15px; } }
-  .company:after {
-    content: '';
-    clear: both; }
   .company__left {
     width: 43%;
     padding-right: 7%;
-    float: left;
-    overflow: hidden; }
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: top; }
     @media (max-width: 1199px) {
       .company__left {
         width: 100%;
         float: none;
-        padding-right: 0; } }
+        padding-right: 0;
+        display: block; } }
     @media (max-width: 1024px) {
       .company__left {
         padding: 0 15px; } }
@@ -1608,14 +1607,17 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       overflow: hidden;
       line-height: 1.438em; }
   .company__right {
-    padding: 6.7em 8.5em 8.4em;
-    overflow: hidden;
+    padding: 6.7em 8.5em;
+    width: 57%;
     color: #ffffff;
-    background-color: #0366e9; }
+    background-color: #0366e9;
+    display: table-cell;
+    vertical-align: top; }
     @media (max-width: 1199px) {
       .company__right {
         width: 100%;
-        padding: 4em 15px; } }
+        padding: 4em 15px;
+        display: block; } }
     .company__right_title {
       margin-bottom: 0.75em;
       font-size: 3.16em;
@@ -1828,8 +1830,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 /* Get in touch
 -------------------------------------------------------------------------------*/
 .getintouch {
-  padding-left: 7em;
-  background-color: #f9f9f9; }
+  background-color: #f9f9f9;
+  display: table; }
   @media (max-width: 1366px) {
     .getintouch {
       padding-left: 15px; } }
@@ -1840,15 +1842,20 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     padding-bottom: 3em; }
   .getintouch__left {
     width: 50%;
-    float: left;
-    padding-top: 4.8em; }
+    padding-left: 7em;
+    padding-top: 4.8em;
+    display: table-cell;
+    vertical-align: top; }
+    @media (max-width: 1366px) {
+      .getintouch__left {
+        padding-left: 0; } }
     @media (max-width: 1199px) {
       .getintouch__left {
         padding-top: 4em;
         padding-left: 15px;
         padding-right: 15px;
         width: 100%;
-        float: none; } }
+        display: block; } }
     .getintouch__left_title {
       width: 45%;
       float: left; }
@@ -1896,11 +1903,15 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       font-size: 1.7em; }
   .getintouch__right {
     padding: 6.1em 7em 4.9em 0;
-    overflow: hidden;
+    width: 50%;
+    display: table-cell;
+    vertical-align: top;
     background-color: #0366e9; }
     @media (max-width: 1199px) {
       .getintouch__right {
-        padding: 6.1em 7em 4.9em 3em; } }
+        padding: 6.1em 7em 4.9em 3em;
+        width: 100%;
+        display: block; } }
     @media (max-width: 1024px) {
       .getintouch__right {
         padding: 4em 15px 2em; } }
@@ -2399,7 +2410,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     background-color: #50ABF5; }
   .article__link_icon {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 0.9em;
     overflow: hidden;

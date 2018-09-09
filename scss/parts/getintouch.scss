@@ -1,9 +1,9 @@
 /* Get in touch
 -------------------------------------------------------------------------------*/
 .getintouch {
-	padding-left: 7em;
 	background-color: #f9f9f9;
 	@extend %clear_a;
+	display: table;
 	@media (max-width : 1366px) {
 		padding-left: 15px;
 	}
@@ -15,14 +15,21 @@
 	}
 	&__left {
 		width: 50%;	
-		float: left;
+		padding-left: 7em;
+		// float: left;
 		padding-top: 4.8em;
+		display: table-cell;
+		vertical-align: top;
+		@media (max-width : 1366px) {
+			padding-left: 0;
+		}
 		@media (max-width : 1199px) {
 			padding-top: 4em;
 			padding-left: 15px;
 			padding-right: 15px;
 			width: 100%;
-			float: none;
+			// float: none;
+			display: block;
 		}
 		&_title {
 			width: 45%;
@@ -81,10 +88,15 @@
 	}
 	&__right {
 		padding: 6.1em 7em 4.9em 0;
-		overflow: hidden;
+		// overflow: hidden;
+		width: 50%;
+		display: table-cell;
+		vertical-align: top;
 		background-color: $color_primary;
 		@media (max-width: 1199px) {
 			padding: 6.1em 7em 4.9em 3em;
+			width: 100%;
+			display: block;
 		}
 		@media (max-width: 1024px) {
 			padding: 4em 15px 2em;
