@@ -6,20 +6,18 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="css/style.css?0.1" rel="stylesheet"/>
+    <link href="css/style.css?0.2" rel="stylesheet"/>
   </head>
   <body>
     <div class="wrapper">
-      <!-- begin loader-->
-      <!-- end loader -->
       <!-- begin header -->
       <header class="header">
-        <div class="container_center"><a class="header__logo" href="/"><img src="img/logo.svg" alt=""/></a>
+        <div class="container_center"><a class="header__logo" href="index.html"><img src="img/logo.svg" alt=""/></a>
           <!-- begin navbar-->
           <div class="navbar__toggle_wrap js__navbar-toggle"><a class="navbar__toggle" href="#navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div>
           <div class="header__right js-navbar" id="navbar">
             <ul class="navbar">
-              <li class="navbar__item"><a class="navbar__link" href="/">Home</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="index.html">Home</a></li>
               <li class="navbar__item"><a class="navbar__link" href="about.html">About us</a></li>
               <li class="navbar__item"><a class="navbar__link" href="products.html">Products</a></li>
               <li class="navbar__item"><a class="navbar__link" href="news.html">News</a></li>
@@ -43,7 +41,7 @@
               <div class="top__bg top__bg_main"></div>
               <div class="top__content">
                 <div class="top__h">Developing the future</div>
-                <div class="top__sub">Software solution for <a class="top__sub_link" href="#">&lt; fintech &gt;</a></div>
+                <div class="top__sub">Software solution for <a class="top__sub_link typed typed_duble" href="#"><span class="typed__text1 typed__wrap">fintech</span></a></div>
               </div>
             </div>
           </div>
@@ -62,7 +60,7 @@
           <!-- begin .company-->
           <div class="company">
             <div class="company__left">
-              <h2>Сompany</h2>
+              <h2 class="typed"><span class="typed__wrap typed__text2">Сompany</span></h2>
               <p>Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.</p>
               <h3>Our solution maybe interested for</h3>
               <ul class="company__interest">
@@ -89,7 +87,7 @@
               </ul>
             </div>
             <div class="company__right">
-              <div class="company__right_title">Our key area of expertise is</div><a class="company__right_link" href="#">&lt; developing software solutions &gt;</a>
+              <div class="company__right_title">Our key area of expertise is</div><a class="company__right_link typed typed_duble" href="#"><span class="typed__wrap">developing software solutions</span></a>
               <div class="company__right_texttext">for the new e-economy, including cryptocurrency market</div>
               <div class="company__right_down"></div>
             </div>
@@ -100,7 +98,7 @@
         <div class="slider__bg">
           <div class="slider">
             <div class="slider__left">
-              <h2 class="slider__h2">Products</h2>
+              <h2 class="slider__h2 typed"><span class="typed__wrap typed__text3">Products</span></h2>
               <p>See our current products</p>
               <div class="slider__arrows"><a class="slider__arrow js-slider__prev" href="#"><span class="icon-slide_prev"></span></a><a class="slider__arrow js-slider__next" href="#"><span class="icon-slide_next"></span></a></div>
             </div>
@@ -129,7 +127,7 @@
           <!-- begin .slider-->
           <div class="slider slider__news">
             <div class="slider__left">
-              <h2 class="slider__h2">News</h2>
+              <h2 class="slider__h2 typed"><span class="typed__wrap typed__text4">News</span></h2>
               <p>Read our last news</p>
               <div class="slider__arrows"><a class="slider__arrow js-slider__news_prev" href="#"><span class="icon-slide_prev"></span></a><a class="slider__arrow js-slider__news_next" href="#"><span class="icon-slide_next"></span></a></div>
             </div>
@@ -181,7 +179,7 @@
         <!-- begin .getintouch-->
         <div class="getintouch">
           <div class="getintouch__left">
-            <h2 class="getintouch__left_title">Get in touch</h2>
+            <h2 class="getintouch__left_title typed"><span class="typed__wrap typed__text5">Get in touch</span></h2>
             <div class="getintouch__left_contacts">
               <div class="getintouch__left_row">
                 <div class="getintouch__left_row_par">Phone:</div>
@@ -243,9 +241,24 @@
       </div>
     </footer>
     <!-- end footer -->
-    <script src="js/lib/jquery.js?0.1"></script>
-    <script src="js/lib/modal.js?0.1"></script>
-    <script src="js/lib/slick.min.js?0.1"></script>
-    <script src="js/function.js?0.1"></script>
+    <!-- begin loader-->
+    <div class="loader loader__home">
+      <div class="loader__area">
+        <div class="loader__item">
+          <div class="loader__logo"><img src="img/loader_logo.svg" alt=""/></div>
+        </div>
+        <div class="loader__item">
+          <div class="loader__name"><img src="img/loader_name.svg" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <!-- end loader -->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="js/lib/jquery.viewportchecker.min.js"></script>
+    <script src="js/lib/jquery.circliful.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/function.js?0.2"></script>
   </body>
 </html>

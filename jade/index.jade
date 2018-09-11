@@ -1,6 +1,7 @@
 extends template.jade
 
 block variables
+	-var home = true;
 	-var pageClass = "";
 
 block title
@@ -17,7 +18,8 @@ block content
 				.top__content
 					.top__h Developing the future
 					.top__sub Software solution for 
-						a.top__sub_link(href="#") &lt; fintech &gt;
+						a.top__sub_link.typed.typed_duble(href="#")
+							span.typed__text1.typed__wrap fintech
 		// end .top
 
 
@@ -43,7 +45,8 @@ block content
 		// begin .company
 		.company
 			.company__left
-				h2 Сompany
+				h2.typed
+					span.typed__wrap.typed__text2 Сompany
 				p Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.
 
 				h3 Our solution maybe interested for
@@ -67,7 +70,8 @@ block content
 
 			.company__right
 				.company__right_title Our key area of expertise is
-				a.company__right_link(href="#") &lt; developing software solutions &gt;
+				a.company__right_link.typed.typed_duble(href="#")
+					span.typed__wrap developing software solutions
 				.company__right_texttext for the new e-economy, including cryptocurrency market
 				.company__right_down
 		// end .company
@@ -77,7 +81,8 @@ block content
 	.slider__bg
 		.slider
 			.slider__left
-				h2.slider__h2 Products
+				h2.slider__h2.typed
+					span.typed__wrap.typed__text3 Products
 				p See our current products
 				.slider__arrows
 					a.slider__arrow.js-slider__prev(href="#")
@@ -120,7 +125,8 @@ block content
 		// begin .slider
 		.slider.slider__news
 			.slider__left
-				h2.slider__h2 News
+				h2.slider__h2.typed
+					span.typed__wrap.typed__text4 News
 				p Read our last news
 				.slider__arrows
 					a.slider__arrow.js-slider__news_prev(href="#")
@@ -221,7 +227,8 @@ block content
 	// begin .getintouch
 	.getintouch
 		.getintouch__left
-			h2.getintouch__left_title Get in touch
+			h2.getintouch__left_title.typed
+				span.typed__wrap.typed__text5 Get in touch
 			.getintouch__left_contacts
 				.getintouch__left_row
 					.getintouch__left_row_par Phone:

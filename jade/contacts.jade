@@ -27,7 +27,8 @@ block content
 			.top
 				.top__bg.top__bg_contacts
 				.top__content
-					.top__title Contacts
+					.top__title.typed
+						.typed__wrap Contacts
 		// end .top
 
 
@@ -35,7 +36,8 @@ block content
 		.getintouch__wrap.out
 			.getintouch
 				.getintouch__left
-					h2.getintouch__left_title Get in touch
+					h2.getintouch__left_title.typed
+						.typed__wrap Get in touch
 					.getintouch__left_contacts
 						.getintouch__left_row
 							.getintouch__left_row_par Phone:
@@ -67,7 +69,9 @@ block content
 											span.icon-instagram.getintouch__soc_icon
 				form.getintouch__right(action="#")
 					.getintouch__right_column
-						input.getintouch__right_input(type="text", placeholder="Name")
+						.form__row
+							input.getintouch__right_input(type="text", id="f1")
+							label.form__label(for="f1") Name
 						input.getintouch__right_input(type="tel", placeholder="Phone")
 						textarea.getintouch__right_textarea(placeholder="Your messege")
 					.getintouch__right_column

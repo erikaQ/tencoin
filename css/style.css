@@ -626,6 +626,7 @@ img {
       padding: 0 15px; } }
 
 .form__row {
+  position: relative;
   margin-bottom: 15px; }
   .form__row input:not([type]),
   .form__row input[type=text],
@@ -639,10 +640,42 @@ img {
   .form__row textarea,
   .form__row .btn {
     width: 100%; }
+    .form__row input:not([type]):focus + .form__label, .form__row input:not([type]).fullField + .form__label,
+    .form__row input[type=text]:focus + .form__label,
+    .form__row input[type=text].fullField + .form__label,
+    .form__row input[type=password]:focus + .form__label,
+    .form__row input[type=password].fullField + .form__label,
+    .form__row input[type=email]:focus + .form__label,
+    .form__row input[type=email].fullField + .form__label,
+    .form__row input[type=url]:focus + .form__label,
+    .form__row input[type=url].fullField + .form__label,
+    .form__row input[type=search]:focus + .form__label,
+    .form__row input[type=search].fullField + .form__label,
+    .form__row input[type=tel]:focus + .form__label,
+    .form__row input[type=tel].fullField + .form__label,
+    .form__row input[type=number]:focus + .form__label,
+    .form__row input[type=number].fullField + .form__label,
+    .form__row input[type=datetime]:focus + .form__label,
+    .form__row input[type=datetime].fullField + .form__label,
+    .form__row textarea:focus + .form__label,
+    .form__row textarea.fullField + .form__label,
+    .form__row .btn:focus + .form__label,
+    .form__row .btn.fullField + .form__label {
+      top: -1.2em;
+      font-weight: bold; }
   .form__row textarea {
     max-width: 100%;
     max-width: 100%;
     min-height: 15px; }
+
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ddd;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 input:not([type]),
 input[type=text],
@@ -656,7 +689,7 @@ input[type=datetime],
 textarea {
   background-color: #0366e9;
   border-bottom: 1px solid #ffffff;
-  padding-bottom: 0.55em;
+  padding: 0 0 0.55em;
   outline: none;
   color: #ffffff;
   font-size: 1em;
@@ -701,8 +734,7 @@ textarea {
   input[type=number].invalid,
   input[type=datetime].invalid,
   textarea.invalid {
-    background-color: #fff0f0;
-    border: 1px solid red; }
+    border-bottom: 1px solid red; }
   input:not([type])::-webkit-input-placeholder,
   input[type=text]::-webkit-input-placeholder,
   input[type=password]::-webkit-input-placeholder,
@@ -2292,6 +2324,21 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     float: left;
     padding-left: 3em;
     margin-bottom: 3.6em; }
+    .hiring__item:nth-child(1) .hiring__circle:before {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+    .hiring__item:nth-child(2) .hiring__circle:before {
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s; }
+    .hiring__item:nth-child(3) .hiring__circle:before {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s; }
+    .hiring__item:nth-child(4) .hiring__circle:before {
+      -webkit-animation-delay: 0.8s;
+      animation-delay: 0.8s; }
+    .hiring__item:nth-child(5) .hiring__circle:before {
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s; }
     @media (max-width: 1199px) {
       .hiring__item {
         width: 50%; } }
@@ -2305,18 +2352,68 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   .hiring__left {
     width: 7.438em;
     float: left;
-    margin-right: 2em; }
+    margin-right: 2em;
+    position: relative;
+    padding-bottom: 79%; }
     @media (max-width: 767px) {
       .hiring__left {
         width: 4em;
         margin-right: 1em; } }
   .hiring__right {
-    overflow: hidden;
     display: table-cell;
     vertical-align: middle; }
     @media (max-width: 767px) {
       .hiring__right p {
         margin: 0; } }
+  .hiring__count {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    width: 92%;
+    height: 92%;
+    z-index: 3;
+    border-radius: 50%;
+    text-align: center;
+    color: #0366e9;
+    font-family: "Roboto Slab";
+    font-size: 1.8em;
+    line-height: 2; }
+    @media (min-width: 768px) {
+      .hiring__count {
+        line-height: 3.2;
+        font-size: 2.2em; } }
+  .hiring__circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .hiring__circle svg {
+      position: absolute;
+      left: -25%;
+      top: -30%;
+      width: 150%;
+      height: 150%; }
+    .hiring__circle.stop:before {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused; }
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn); } }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(0.5turn);
+    transform: rotate(0.5turn); } }
+
+@-webkit-keyframes bg {
+  50% {
+    background: #0366e9; } }
+
+@keyframes bg {
+  50% {
+    background: #0366e9; } }
 
 /* About
 -------------------------------------------------------------------------------*/
@@ -2450,3 +2547,105 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     width: 3.25em;
     height: 0.125em;
     background-color: #0366e9; }
+
+.loader {
+  background: #0366e9;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  display: table;
+  text-align: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  opacity: 1; }
+  .loader__hide {
+    opacity: 0; }
+  .loader__area {
+    display: table-cell;
+    vertical-align: middle; }
+  .loader__item {
+    display: inline-block;
+    vertical-align: middle; }
+  .loader__logo {
+    -webkit-animation: 12s linear 0s normal none infinite running rot;
+    animation: 12s linear 0s normal none infinite running rot; }
+    @media (min-width: 768px) {
+      .loader__logo {
+        max-width: 166px; } }
+    @media (max-width: 767px) {
+      .loader__logo {
+        max-width: 80px; } }
+  .loader__name {
+    max-width: 0;
+    display: block;
+    overflow: hidden;
+    padding-left: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .loader__name img {
+      width: 186px;
+      display: block;
+      max-width: none; }
+    .loader__name_show {
+      padding-left: 24px;
+      max-width: 210px; }
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.typed_duble:before, .typed_duble:after {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom; }
+
+.typed_duble:before {
+  content: "< "; }
+
+.typed_duble:after {
+  content: " >"; }
+
+.typed__wrap {
+  display: inline; }
