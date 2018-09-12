@@ -23,7 +23,7 @@ block content
 
 
 		// begin .top
-		.top_wrap
+		.top__wrap
 			.top
 				.top__bg.top__bg_contacts
 				.top__content
@@ -68,14 +68,23 @@ block content
 										a.follow__soc_link(href="#")
 											span.icon-instagram.getintouch__soc_icon
 				form.getintouch__right(action="#")
-					.getintouch__right_column
-						.form__row
-							input.getintouch__right_input(type="text", id="f1")
-							label.form__label(for="f1") Name
-						input.getintouch__right_input(type="tel", placeholder="Phone")
-						textarea.getintouch__right_textarea(placeholder="Your messege")
-					.getintouch__right_column
-						input.getintouch__right_input(type="text", placeholder="Surname")
-						input.getintouch__right_input(type="email", placeholder="E-mail")
-						button.getintouch__right_btn.btn Send
+					.getintouch__right_column_list
+						.getintouch__right_column
+							.form__row
+								input.getintouch__right_input(type="text", id="f1")
+								label.form__label(for="f1") Name
+							.form__row
+								input.getintouch__right_input(type="tel", id="f2")
+								label.form__label(for="f2") Phone
+							.form__row
+								textarea.getintouch__right_textarea(id="f3")
+								label.form__label(for="f3") Your message
+						.getintouch__right_column
+							.form__row
+								input.getintouch__right_input(type="text", id="f4")
+								label.form__label(for="f4") Surname
+							.form__row
+								input.getintouch__right_input(type="email", id="f5")
+								label.form__label(for="f5") E-mail
+							button.getintouch__right_btn.btn Send
 		// end .getintouch

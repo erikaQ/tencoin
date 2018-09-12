@@ -12,14 +12,30 @@ block content
 	.container_center
 
 		// begin .top
-		.top_wrap
-			.top.top_big
-				.top__bg.top__bg_main
-				.top__content
-					.top__h Developing the future
-					.top__sub Software solution for 
-						a.top__sub_link.typed.typed_duble(href="#")
-							span.typed__text1.typed__wrap fintech
+		.top__wrap
+			.top.top__big
+				.top__slider
+					.top__slider_item
+						.top__bg.top__bg_main
+						.top__content
+							.top__h Developing the future
+							.top__sub Software solution for 
+								a.top__sub_link.typed.typed_duble(href="#")
+									span.typed__text1.typed__wrap fintech
+					.top__slider_item
+						.top__bg.top__bg_main
+						.top__content
+							.top__h Developing the future
+							.top__sub Software solution for 
+								a.top__sub_link.typed.typed_duble(href="#")
+									span.typed__text1.typed__wrap fintech
+					.top__slider_item
+						.top__bg.top__bg_main
+						.top__content
+							.top__h Developing the future
+							.top__sub Software solution for 
+								a.top__sub_link.typed.typed_duble(href="#")
+									span.typed__text1.typed__wrap fintech
 		// end .top
 
 
@@ -225,46 +241,58 @@ block content
 
 
 	// begin .getintouch
-	.getintouch
-		.getintouch__left
-			h2.getintouch__left_title.typed
-				span.typed__wrap.typed__text5 Get in touch
-			.getintouch__left_contacts
-				.getintouch__left_row
-					.getintouch__left_row_par Phone:
-					.getintouch__left_row_value +7 586 969 6363
-				.getintouch__left_row
-					.getintouch__left_row_par E-mail:
-					.getintouch__left_row_value support@tencoins.org
-				.getintouch__left_row
-					.getintouch__left_row_par Address:
-					.getintouch__left_row_value Tencoins Ltd, 75 Triq I-Abate Rigord Level 2, Ta’ Xbiex XBX 1102 Malta
-				.getintouch__left_row
-					.getintouch__left_row_par Telegram:
-					.getintouch__left_row_value @tencoins_org
-				.getintouch__left_row.last
-					.getintouch__left_row_par Follow us:
-					.getintouch__left_row_value
-						ul.follow__soc.getintouch__soc
-							li.follow__soc_item
-								a.follow__soc_link(href="#")
-									span.icon-m.getintouch__soc_icon
-							li.follow__soc_item
-								a.follow__soc_link(href="#")
-									span.icon-facebook.getintouch__soc_icon
-							li.follow__soc_item
-								a.follow__soc_link(href="#")
-									span.icon-twitter.getintouch__soc_icon
-							li.follow__soc_item
-								a.follow__soc_link(href="#")
-									span.icon-instagram.getintouch__soc_icon
-		form.getintouch__right(action="#")
-			.getintouch__right_column
-				input.getintouch__right_input(type="text", placeholder="Name")
-				input.getintouch__right_input(type="tel", placeholder="Phone")
-				textarea.getintouch__right_textarea(placeholder="Your messege")
-			.getintouch__right_column
-				input.getintouch__right_input(type="text", placeholder="Surname")
-				input.getintouch__right_input(type="email", placeholder="E-mail")
-				button.getintouch__right_btn.btn Send
+	.getintouch__wrap
+		.getintouch
+			.getintouch__left
+				h2.getintouch__left_title.typed
+					.typed__wrap Get in touch
+				.getintouch__left_contacts
+					.getintouch__left_row
+						.getintouch__left_row_par Phone:
+						.getintouch__left_row_value +7 586 969 6363
+					.getintouch__left_row
+						.getintouch__left_row_par E-mail:
+						.getintouch__left_row_value support@tencoins.org
+					.getintouch__left_row
+						.getintouch__left_row_par Address:
+						.getintouch__left_row_value Tencoins Ltd, 75 Triq I-Abate Rigord Level 2, Ta’ Xbiex XBX 1102 Malta
+					.getintouch__left_row
+						.getintouch__left_row_par Telegram:
+						.getintouch__left_row_value @tencoins_org
+					.getintouch__left_row.last
+						.getintouch__left_row_par Follow us:
+						.getintouch__left_row_value
+							ul.follow__soc.getintouch__soc
+								li.follow__soc_item
+									a.follow__soc_link(href="#")
+										span.icon-m.getintouch__soc_icon
+								li.follow__soc_item
+									a.follow__soc_link(href="#")
+										span.icon-facebook.getintouch__soc_icon
+								li.follow__soc_item
+									a.follow__soc_link(href="#")
+										span.icon-twitter.getintouch__soc_icon
+								li.follow__soc_item
+									a.follow__soc_link(href="#")
+										span.icon-instagram.getintouch__soc_icon
+			form.getintouch__right(action="#")
+				.getintouch__right_column_list
+					.getintouch__right_column
+						.form__row
+							input.getintouch__right_input(type="text", id="f1")
+							label.form__label(for="f1") Name
+						.form__row
+							input.getintouch__right_input(type="tel", id="f2")
+							label.form__label(for="f2") Phone
+						.form__row
+							textarea.getintouch__right_textarea(id="f3")
+							label.form__label(for="f3") Your message
+					.getintouch__right_column
+						.form__row
+							input.getintouch__right_input(type="text", id="f4")
+							label.form__label(for="f4") Surname
+						.form__row
+							input.getintouch__right_input(type="email", id="f5")
+							label.form__label(for="f5") E-mail
+						button.getintouch__right_btn.btn Send
 	// end .getintouch
