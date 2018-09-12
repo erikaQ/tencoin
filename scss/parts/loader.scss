@@ -35,12 +35,6 @@
 		}
 		animation: 12s linear 0s normal none infinite running rot;
 	}
-	$name: 510px;
-	$pad: 44px;
-	@media (max-width: 767px) {
-		$name: 210px;
-		$pad: 24px;
-	}
 	&__name {
 		max-width: 0;
 		display: block;
@@ -48,14 +42,20 @@
 		padding-left: 0;
 		transition: 0.5s;
 		img {
-			width: $name - $pad;
+			width: 210px - 24px;
 			display: block;
 			max-width: none;
-			
+			@media (min-width: 768px) {    
+				width: 510px - 44px;
+			}
 		}
 		&_show {
-			padding-left: $pad;
-			max-width: $name;
+			padding-left: 24px;
+			max-width: 210px;
+			@media (min-width: 768px) {    
+				padding-left: 44px;
+				max-width: 510px;
+			}
 		}
 	}
 }

@@ -96,9 +96,16 @@
 			}
 		}
 		&_img {
-			transition: .3s;
+			overflow: hidden;
+			img {
+				transition: 1s;
+			}
 			&:hover {
-				opacity: 0.8;
+				// opacity: 0.8;
+				img {
+					transform: scale(1.1);
+					
+				}
 			}
 		}
 		&_title {

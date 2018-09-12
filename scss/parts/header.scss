@@ -16,6 +16,7 @@
 	&__right {
 		padding: 0.7em 0;
 		float: right;
+		transition: .3s;
 		@extend %clear_a;
 			@media (max-width : 768px) {
 				position: fixed;
@@ -103,8 +104,8 @@
 	}
 	&__toggle {
 		position: absolute;
-		top: 0.9em;
-		right: 0;
+		top: 1em;
+		right: 0.55em;
 		width: 2.5em;
 		height: 1.8em;
 		padding: 0.2em 0;
@@ -163,6 +164,16 @@
 				cursor: pointer;
 			}
 		}
+	}
+	&__overlay {
+		transition: .3s;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(#000, 0.5);
+		z-index: 45;
 	}
 }
 

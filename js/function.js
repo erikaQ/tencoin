@@ -103,8 +103,20 @@ $(document).ready(function() {
         var $this = $(this),
             navbar = $('.js-navbar');
 
+        if (!$(this).hasClass('open')) {
+            $('body').css('overflow', 'hidden').append('<div class="navbar__overlay"></div>');
+        } else {
+            $('body').removeAttr('style');
+            $('.navbar__overlay').remove();
+        }
+
         $this.toggleClass('open');
         navbar.toggleClass('open');
+    });
+    $('body').on('click', '.navbar__overlay', function() {
+        $('.js__navbar-toggle, .js-navbar').removeClass('open');
+        $('body').removeAttr('style');
+        $('.navbar__overlay').remove();
     });
 
 

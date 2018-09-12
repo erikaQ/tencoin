@@ -2,8 +2,9 @@
 -------------------------------------------------------------------------------*/
 .getintouch {
 	background-color: #f9f9f9;
-	@extend %clear_a;
 	display: table;
+	width: 100%;
+	@extend %clear_a;
 	@media (max-width : 1366px) {
 		// padding-left: 15px;
 	}
