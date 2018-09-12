@@ -51,9 +51,9 @@ block content
 			.company__left
 				h2.typed
 					span.typed__wrap.typed__text2 Сompany
-				p Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.
+				p.sub Tencoins is an international IT company that specializes in Internet-related services and products, which include trading, payment and gambling platforms.
 
-				h3 Our solution maybe interested for
+				h3 Our solution can be interested for
 
 				ul.company__interest
 					li.company__interest_item
@@ -87,7 +87,7 @@ block content
 			.slider__left
 				h2.slider__h2.typed
 					span.typed__wrap.typed__text3 Products
-				p See our current products
+				p.sub See our current products
 				.slider__arrows
 					a.slider__arrow.js-slider__prev(href="#")
 						span.icon-slide_prev
@@ -137,7 +137,7 @@ block content
 			.slider__left
 				h2.slider__h2.typed
 					span.typed__wrap.typed__text4 News
-				p Read our last news
+				p.sub Read our last news
 				.slider__arrows
 					a.slider__arrow.js-slider__news_prev(href="#")
 						span.icon-slide_prev
@@ -275,24 +275,23 @@ block content
 								li.follow__soc_item
 									a.follow__soc_link(href="#")
 										span.icon-instagram.getintouch__soc_icon
-			form.getintouch__right(action="#")
-				.getintouch__right_column_list
-					.getintouch__right_column
-						.form__row
-							input.getintouch__right_input(type="text", id="f1")
-							label.form__label(for="f1") Name
-						.form__row
-							input.getintouch__right_input(type="tel", id="f2")
-							label.form__label(for="f2") Phone
-						.form__row
-							textarea.getintouch__right_textarea(id="f3")
-							label.form__label(for="f3") Your message
-					.getintouch__right_column
-						.form__row
-							input.getintouch__right_input(type="text", id="f4")
-							label.form__label(for="f4") Surname
-						.form__row
-							input.getintouch__right_input(type="email", id="f5")
-							label.form__label(for="f5") E-mail
-						button.getintouch__right_btn.btn Send
+			.getintouch__form
+				.getintouch__form_list.grid.grid__2
+					.form__row.getintouch__form_row
+						input.getintouch__form_input(type="text", id="f1")
+						label.form__label(for="f1") Name
+					.form__row.getintouch__form_row
+						input.getintouch__form_input(type="text", id="f4")
+						label.form__label(for="f4") Surname
+					.form__row.getintouch__form_row
+						input.getintouch__form_input(type="tel", id="f2")
+						label.form__label(for="f2") Phone
+					.form__row.getintouch__form_row
+						input.getintouch__form_input(type="email", id="f5")
+						label.form__label(for="f5") E-mail
+					.form__row.getintouch__form_row
+						textarea.getintouch__form_textarea(id="f3")
+						label.form__label(for="f3") Your message
+					.form__row.getintouch__form_row
+						button.getintouch__form_btn.btn Send
 	// end .getintouch

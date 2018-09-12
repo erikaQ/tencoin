@@ -1,11 +1,13 @@
 /* Products
 -------------------------------------------------------------------------------*/
 .products {
+	margin-left: -1.5em;
 	&__wrap {
 		padding-top: 3.15em;
 		padding-bottom: 4.6em;
 	}
 	&__item {
+		padding-left: 1.5em;
 		margin-bottom: 1.5em;
 	}
 	&__link {
