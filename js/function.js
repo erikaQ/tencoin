@@ -258,7 +258,7 @@ function animatedText() {
 
 function animatedTextStart(elem) {
     var elClass = elem;
-    var str = $(elClass).text();
+    var str = $(elClass).data('typed');
     $(elClass).empty();
     var typed = new Typed(elClass, {
             strings: [str],
