@@ -308,7 +308,7 @@ $(function () {
             $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
 
             // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-            $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+            $(this).append($('<div class="video__play"><span class="icon-play video__play_icon"></span></div>'));
 
         });
 

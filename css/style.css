@@ -430,8 +430,8 @@ template {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?11mwfx");
-  src: url("../fonts/icomoon.eot?11mwfx#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?11mwfx") format("truetype"), url("../fonts/icomoon.woff?11mwfx") format("woff"), url("../fonts/icomoon.svg?11mwfx#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?p0bzlo");
+  src: url("../fonts/icomoon.eot?p0bzlo#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?p0bzlo") format("truetype"), url("../fonts/icomoon.woff?p0bzlo") format("woff"), url("../fonts/icomoon.svg?p0bzlo#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -478,20 +478,23 @@ template {
 .icon-minus:before {
   content: ""; }
 
-.icon-plus:before {
+.icon-play:before {
   content: ""; }
 
-.icon-quote:before {
+.icon-plus:before {
   content: ""; }
 
-.icon-slide_next:before {
+.icon-quote:before {
   content: ""; }
 
-.icon-slide_prev:before {
+.icon-slide_next:before {
   content: ""; }
 
-.icon-twitter:before {
+.icon-slide_prev:before {
   content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
 
 .icon-facebook {
   color: #3A559F; }
@@ -508,7 +511,8 @@ template {
 .icon-arrow {
   color: #BCBCBC; }
 
-.icon-quote {
+.icon-quote,
+.icon-play {
   color: #0366e9; }
 
 body {
@@ -529,7 +533,10 @@ ul {
   margin: 0;
   list-style: none; }
 
-h2 {
+h2 + p {
+  margin-bottom: 1em; }
+
+h2.block__title {
   position: relative;
   top: -0.1em;
   margin: 0 0 0.7em;
@@ -538,44 +545,63 @@ h2 {
   font-size: 2.9em;
   line-height: 1.4;
   font-weight: 400; }
-  h2:before {
+  h2.block__title:before {
     content: '<';
     position: relative;
     top: -0.07em;
     margin-right: 0.3em; }
   @media (max-width: 992px) {
-    h2 {
+    h2.block__title {
       font-size: 2.5em; } }
   @media (max-width: 767px) {
-    h2 {
+    h2.block__title {
       font-size: 2em; } }
-  h2 + p {
-    margin-bottom: 1em; }
 
-h3 {
+@media (max-width: 991px) {
+  h3 {
+    font-size: 2em; } }
+
+h3.next {
+  margin-top: 1.3em; }
+
+h3.line {
   position: relative;
+  padding-bottom: 0.85em;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  color: #000;
+  font-size: 2.25em;
+  font-weight: 900; }
+  h3.line:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background-color: #000; }
+
+h5 {
+  position: relative;
+  margin-top: 0.7em;
   margin-bottom: 1.5em;
   color: #000;
   font-size: 1.125em;
   font-weight: 900; }
 
-h4 {
-  color: #000;
-  font-size: 2em;
-  font-weight: 300;
-  text-transform: capitalize;
-  margin-top: 0.6em;
-  margin-bottom: 1.5em; }
-
 p {
-  margin-bottom: 2em; }
+  margin-bottom: 1.6em; }
   p + h3 {
+    margin-top: .9em; }
+  p + h5 {
     margin-top: 2em; }
   p.sub {
     color: #999;
     font-size: 1.38em;
     font-weight: 300;
     font-style: italic; }
+    p.sub + .blockquote {
+      margin-top: 6.6em; }
 
 img {
   width: 100%;
@@ -1151,12 +1177,20 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 7.2em;
-  height: 7.2em;
-  margin-top: -3.6em;
-  margin-left: -3.6em;
-  border-radius: 50%;
-  cursor: pointer; }
+  width: 5.4em;
+  height: 5.4em;
+  padding-right: 1.3em;
+  margin-top: -2.7em;
+  margin-left: -2.7em;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%; }
+  .video__play_icon {
+    position: absolute;
+    font-size: 1.6em;
+    line-height: 3.5; }
 
 /* Slider */
 .slick-slider {
@@ -1515,6 +1549,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
           background-position: right top; } }
     .top__bg_money {
       background: url("../img/top/top_img7.jpg") no-repeat center top; }
+    .top__bg_product {
+      background: url("../img/top/top_img8.jpg") no-repeat center top; }
     .top__bg:before {
       content: '';
       position: absolute;
@@ -1868,7 +1904,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .slider__right {
   overflow: hidden; }
 
-.slider__h2 {
+.slider__title {
   margin-bottom: 0.45em; }
 
 .slider__arrows {
@@ -2351,6 +2387,14 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     .jobs__collapse_wrap {
       margin-bottom: 3em; } }
 
+.jobs__collapse_title {
+  color: #000;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-top: 0.6em;
+  margin-bottom: 1.5em; }
+
 .jobs__collapse_item {
   margin-bottom: 1em;
   background-color: #ffffff; }
@@ -2455,7 +2499,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   -o-transition: 0.3s;
   transition: 0.3s; }
   .jobs__collapse_icon:before {
-    content: ""; }
+    content: ""; }
   @media (max-width: 1199px) {
     .jobs__collapse_icon {
       right: 1em; } }
@@ -2582,30 +2626,11 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       padding-top: 2.5em;
       padding-bottom: 4em; } }
 
-.about__title {
-  position: relative;
-  margin-top: 1.15em;
-  padding-bottom: 0.95em;
-  margin-bottom: 1.2em;
-  color: #000;
-  font-size: 2.25em;
-  font-weight: 900; }
-  @media (max-width: 991px) {
-    .about__title {
-      font-size: 2em; } }
-  .about__title:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 90px;
-    height: 3px;
-    background-color: #000; }
-
 /* Products
 -------------------------------------------------------------------------------*/
 .products {
-  margin-left: -1.5em; }
+  margin-left: -1.5em;
+  margin-bottom: 1.4em; }
   .products__wrap {
     padding-top: 3.15em;
     padding-bottom: 4.6em; }
@@ -2613,10 +2638,25 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     padding-left: 1.5em;
     margin-bottom: 1.5em; }
   .products__link {
-    width: 100%; }
+    width: 100%;
+    display: block;
+    text-decoration: none; }
   .products__img {
     display: block;
-    margin-bottom: 0.7em; }
+    margin-bottom: 0.7em;
+    overflow: hidden; }
+    .products__img img {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+    .products__img:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+  .products__title {
+    text-decoration: none; }
+    .products__title:hover {
+      text-decoration: underline; }
 
 /* Article
 -------------------------------------------------------------------------------*/
@@ -2682,7 +2722,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 
 .blockquote {
   position: relative;
-  margin-top: 6.6em;
+  margin-top: 3.6em;
   padding-bottom: 1.2em;
   color: #999999;
   font-family: Roboto;
@@ -2704,6 +2744,28 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     width: 3.25em;
     height: 0.125em;
     background-color: #0366e9; }
+
+.product {
+  width: 100%;
+  padding-top: 0.6em;
+  margin-bottom: 2.8em; }
+  .product:after {
+    content: '';
+    clear: both;
+    display: block; }
+  .product__info {
+    margin-top: 0.8em;
+    margin-bottom: 3em; }
+  .product .product__description {
+    width: 50%;
+    float: left;
+    padding-right: 2.5%; }
+  .product__img {
+    width: 100%;
+    height: auto;
+    display: block; }
+    .product__img_wrap {
+      overflow: hidden; }
 
 .loader {
   background: #0366e9;
@@ -2731,14 +2793,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     display: inline-block;
     vertical-align: middle; }
   .loader__logo {
+    max-width: 80px;
     -webkit-animation: 12s linear 0s normal none infinite running rot;
     animation: 12s linear 0s normal none infinite running rot; }
-    @media (min-width: 768px) {
-      .loader__logo {
-        max-width: 166px; } }
-    @media (max-width: 767px) {
-      .loader__logo {
-        max-width: 80px; } }
   .loader__name {
     max-width: 0;
     display: block;
@@ -2748,12 +2805,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     -o-transition: 0.5s;
     transition: 0.5s; }
     .loader__name img {
-      width: 186px;
+      width: 231px;
       display: block;
       max-width: none; }
-      @media (min-width: 768px) {
-        .loader__name img {
-          width: 466px; } }
     .loader__name_show {
       padding-left: 24px;
       max-width: 210px; }
