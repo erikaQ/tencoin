@@ -23,11 +23,16 @@
 		border-top: 0.063em solid #e5e5e5;
 	}
 	&__share {
+		margin-bottom: 7.7em;
 		&_p {
 			position: relative;
 			top: -0.5em;
 			display: inline-block;
 		}
+		@media (max-width : 1024px) {
+			margin-bottom: 4em;
+		}
+
 	}
 	&__link {
 		position: relative;
