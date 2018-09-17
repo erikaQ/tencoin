@@ -8,23 +8,22 @@ $icon-eye: "\e903";
 $icon-facebook: "\e904";
 $icon-house: "\e905";
 $icon-instagram: "\e906";
-$icon-logo: "\e907";
+$icon-linkedin: "\e907";
 $icon-m: "\e908";
 $icon-minus: "\e909";
 $icon-play: "\e90a";
 $icon-plus: "\e90b";
-$icon-quote: "\e90c";
-$icon-slide_next: "\e90d";
-$icon-slide_prev: "\e90e";
-$icon-twitter: "\e90f";
+$icon-slide_next: "\e90c";
+$icon-slide_prev: "\e90d";
+$icon-twitter: "\e90e";
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?p0bzlo');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?p0bzlo#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?p0bzlo') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?p0bzlo') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?p0bzlo##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dd7s77');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dd7s77#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?dd7s77') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?dd7s77') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?dd7s77##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -79,9 +78,9 @@ $icon-twitter: "\e90f";
     content: $icon-instagram; 
   }
 }
-.icon-logo {
+.icon-linkedin {
   &:before {
-    content: $icon-logo; 
+    content: $icon-linkedin; 
   }
 }
 .icon-m {
@@ -102,11 +101,6 @@ $icon-twitter: "\e90f";
 .icon-plus {
   &:before {
     content: $icon-plus; 
-  }
-}
-.icon-quote {
-  &:before {
-    content: $icon-quote; 
   }
 }
 .icon-slide_next {
@@ -140,7 +134,6 @@ $icon-twitter: "\e90f";
 .icon-arrow {
   color: #BCBCBC;
 }
-.icon-quote,
 .icon-play {
   color: $color_primary;
 }
