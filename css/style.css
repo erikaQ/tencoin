@@ -1226,8 +1226,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%; }
+    z-index: 5;
+    width: 100% !important;
+    height: 100% !important; }
 
 .video__prev {
   position: absolute;
@@ -1241,6 +1242,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 5;
   width: 5.4em;
   height: 5.4em;
   padding-right: 1.3em;
@@ -2955,6 +2957,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
         padding-left: 0 !important; } }
   .contacts__form_input, .contacts__form_textarea {
     width: 100%;
+    color: #666 !important;
     background-color: #fff !important;
     border: 0;
     border-bottom: 1px solid #E6E6E6 !important; }
